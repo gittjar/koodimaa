@@ -1,0 +1,55 @@
+<img src="assets/me.jpg"/>
+
+<br>
+
+<table style="width:30%">
+  <tr>
+    <th style="background-color: gray;">ID
+      <li *ngFor="let x of mydatas">
+    {{ x.id }}
+    </li>
+    </th>
+ 
+    <th style="background-color: rgb(192, 192, 192);">INFO
+     <li *ngFor="let x of mydatas">
+    {{ x.info}}
+    </li>
+    </th>
+  </tr>
+</table>
+
+
+<div style="overflow-x: auto;">
+  <table>
+    <tr>
+      <th>ID</th>
+      <th>INFO</th>
+	  <th>Syntymaaika (kovakoodattu)</th>
+      <th>Syntymapaikka (kovakoodattu)</th>
+    </tr>
+    
+    <tr>
+      <td> <li *ngFor="let x of mydatas">
+    {{ x.id}}
+    </li></td>
+      <td> <li *ngFor="let x of mydatas">
+    {{ x.info}}
+    </li></td>
+    <td><li> 13.4.1977</li> </td>
+    <td><li> Hameenlinna </li></td>
+    
+    </tr>
+    
+        <tr>
+      <td> <li *ngFor="let x of mydatas">
+    {{ x.id}}
+    </li></td>
+      <td> <li *ngFor="let x of mydatas">
+    {{ x.info}}
+    </li></td>
+    <td> 1.1.1980 </td>
+    <td> Helsinki </td>
+    </tr>
+    
+  </table>
+</div>

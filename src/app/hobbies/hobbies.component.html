@@ -1,0 +1,26 @@
+<h2>Harrastukset</h2>
+
+<table style="width:30%">
+  <tr>
+    <th>ID
+      <li *ngFor="let x of mydatashobby">
+    {{ x.id }}
+    </li>
+    </th>
+    
+     <th>Aloitusvuosi
+     <li *ngFor="let x of mydatashobby">
+    {{ x.startyear }}
+    </li>
+    </th>
+ 
+    <th>Harrastus
+     <li *ngFor="let x of mydatashobby">
+    {{ x.info }}
+    </li>
+    </th>
+  </tr>
+</table>
+
+
+  
