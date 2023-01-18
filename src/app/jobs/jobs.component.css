@@ -1,0 +1,28 @@
+.jobspage {
+    font-size: 1.2rem;
+    color: rgb(237, 245, 241);
+    border: 1px solid rgb(70, 70, 70);
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.valikko {
+    font-size: 1.2rem;
+    background-color: #222222;
+    color: rgb(237, 245, 241);
+}
+
+.accordion-item {
+    background-color: #222222;
+    font-size: 1.2rem;
+    color: rgb(237, 245, 241);
+    
+}
+
+.accordion-button
+{
+    border: 1px solid beige;
+}
+
+
+             

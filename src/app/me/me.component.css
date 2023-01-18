@@ -1,12 +1,53 @@
+
+  
+
+
+.me-sivu{
+  padding-left: 15px;
+}
+
+.me-sivu-keskiosa{
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.kortti, .tableborn, .tablemydata {
+  font-size: 1.2rem;
+  color: rgb(237, 245, 241);
+  border: 1px solid rgb(70, 70, 70);
+}
+
+.tablemydata{
+  margin-left: 10px;
+  
+}
+
+li {
+  list-style-type: none;
+  margin: 2px;
+  padding: 5px;
+}
+
+/*
 table {
   border-collapse: collapse;
   width: 100%;
   border: 0,1px;
+  font-size: 1.2rem;
+  color: aliceblue;
+ 
 }
+
+
 
 th, td {
   text-align: left;
-  padding: 20px;
+  margin: 2px;
+  padding: 5px;
 }
 
-tr:nth-child(even) {background-color: #f2f2f5;}
+tr:nth-child(even) {background-color: #09090a;}
+
+*/

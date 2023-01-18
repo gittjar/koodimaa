@@ -1,5 +1,57 @@
-<nav>
-<a routerLink="/me">Mina</a>
-<a routerLink="/studies">Opiskelut</a>
-<a routerLink="/hobbies">Harrastukset</a>
+
+<nav class="navbar navbar-inverse kokosivumenu">
+ 
+    <button mat-icon-button [matMenuTriggerFor]="menu" class="hamburgermenu">
+        <mat-icon>toc</mat-icon>
+      </button>
+      <mat-menu #menu="matMenu">
+
+        <button mat-menu-item>
+          <mat-icon>home</mat-icon>
+          <span><a routerLink="/etusivu">Etusivu <i class="bi bi-arrow-right"></i></a></span>
+        </button>
+
+        <button mat-menu-item>
+            <mat-icon>face</mat-icon>
+            <span><a routerLink="/me">Minä <i class="bi bi-arrow-right"></i></a></span>
+          </button>
+
+          <button mat-menu-item>
+            <mat-icon>work_outline</mat-icon>
+            <span><a routerLink="/jobs">Työpaikat <i class="bi bi-arrow-right"></i></a></span>
+          </button>
+
+          <button mat-menu-item>
+            <mat-icon>book</mat-icon>
+            <span><a routerLink="/studies">Opiskelut <i class="bi bi-arrow-right"></i></a></span>
+          </button>
+
+        <button mat-menu-item>
+          <mat-icon>directions_run</mat-icon>
+          <span><a routerLink="/hobbies">Harrastukset <i class="bi bi-arrow-right"></i></a></span>
+        </button>
+
+        <button mat-menu-item>
+          <mat-icon>computer</mat-icon>
+          <span><a routerLink="/">Portfolio <i class="bi bi-arrow-right"></i></a></span>
+        </button>
+
+
+      </mat-menu>
+
+
+
+    <ul class="nav navbar-nav material-symbols-outlined">
+        <li><a routerLink="/etusivu">Etusivu <i class="bi bi-arrow-right"></i></a></li>
+        <li><a routerLink="/me">Minä <i class="bi bi-arrow-right"></i></a></li>
+        <li><a routerLink="/jobs">Työpaikat <i class="bi bi-arrow-right"></i></a></li>
+        <li><a routerLink="/studies">Opiskelut <i class="bi bi-arrow-right"></i></a> </li>
+        <li><a routerLink="/hobbies">Harrastukset <i class="bi bi-arrow-right"></i></a> </li>
+        <li><a routerLink="/">Portfolio <i class="bi bi-arrow-right"></i></a> </li>
+    </ul>
+    <p class="navbar-text">Jarno K.</p>
 </nav>
+
+
+
+

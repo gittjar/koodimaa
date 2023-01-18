@@ -1,26 +1,30 @@
-<h2>Harrastukset</h2>
 
-<table style="width:30%">
-  <tr>
-    <th>ID
-      <li *ngFor="let x of mydatashobby">
-    {{ x.id }}
-    </li>
-    </th>
+<h2>Harrastuksia</h2>
+<section class="hobby-cards">
+  
+
+  <div class="card text-bg-dark hobby-kortti" style="width: 20rem;" *ngFor="let x of mydatashobby">
+   <figure class="card__thumb"><img src={{x.image}} class="card-img-top"></figure>
+    <div class="card-body">
+      <h5 class="card-title">Id: {{ x.id}}</h5>
+      <p class="card-text">{{ x.info}}</p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item text-bg-dark">{{x.item}}</li>
+    </ul>
+    <div class="card-body">
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
     
-     <th>Aloitusvuosi
-     <li *ngFor="let x of mydatashobby">
-    {{ x.startyear }}
-    </li>
-    </th>
- 
-    <th>Harrastus
-     <li *ngFor="let x of mydatashobby">
-    {{ x.info }}
-    </li>
-    </th>
-  </tr>
-</table>
+  </div>
 
+
+
+
+
+
+  
+</section>
 
   

@@ -1,1 +1,35 @@
-<p>studies works! päivitettään käydyt koulut tänne!</p>
+
+
+<section class="koulut-table">
+  <h1>Koulut ja opiskelut</h1>
+
+  <table class="table tablemydata table-striped-columns table-dark studiestable">
+    <caption>Perustietoja taulukon muodossa, data haetaan tietokannasta</caption>
+   <thead> 
+   <tr>
+    <th>Id#</th>
+    <th>Opinahjo</th>
+    <th>Valmistumisvuosi <i class="bi bi-gem"></i></th>
+   </tr>
+  </thead> 
+  
+  <tbody>
+    <tr>
+  <td><li *ngFor="let x of mydatasstudies">{{ x.id }}</li></td>
+  <td><li *ngFor="let x of mydatasstudies"><i class="bi bi-chevron-compact-right"></i>{{ x.koulu}}</li></td>
+  <td><li *ngFor="let x of mydatasstudies">{{ x.valmistumisvuosi}}</li></td>
+  </tr>
+    
+
+    </tbody>  
+  </table>
+
+
+
+
+
+
+
+
+
+</section>

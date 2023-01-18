@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "jarnon-kotisivu": {
+      "hosting": {
+        "ang-kotisivu": [
+          "jarnon-kotisivu"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "jarnon-kotisivu"
+  }
+}
