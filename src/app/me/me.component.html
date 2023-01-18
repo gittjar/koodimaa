@@ -1,47 +1,67 @@
-<img src="assets/me.jpg"/>
-
-<br>
-Testailen tässä Angularin router ominaisuuksia ja datan siirtämistä.<br>
-Huomaa kuvassa, olen mennyt suksilla kauppaan! <br>
-Sivuston ulkonäköä tullaan siistimään!<br>
-
-<table style="width:30%">
-  <tr>
-    <th style="background-color: gray;">ID
-      <li *ngFor="let x of mydatas">
-    {{ x.id }}
-    </li>
-    </th>
- 
-    <th style="background-color: rgb(192, 192, 192);">INFO
-     <li *ngFor="let x of mydatas">
-    {{ x.info}}
-    </li>
-    </th>
-  </tr>
-</table>
+<main class="me-sivu">
+    <section class="me-sivu-keskiosa">
 
 
-<div style="overflow-x: auto;">
-  <table>
-    <tr>
 
-	  <th>Syntymaaika (kovakoodattu)</th>
-      <th>Syntymapaikka (kovakoodattu)</th>
-    </tr>
-    
-    <tr>
 
-    <td>13.4.1977</td>
-    <td>Hameenlinna</td>
-    
-    </tr>
-    
-        <tr>
-
-    <td> 1.1.1980 </td>
-    <td> Helsinki </td>
-    </tr>
-    
-  </table>
+<div class="card text-bg-dark mb-3 kortti" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="../../assets/images/omakuva.jpg" class="img-fluid rounded-start" alt="...">
+      <p class="card-text text-muted"><i class="bi bi-chevron-compact-right"></i> Kuva tekstiä</p>
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Se olen minä</h5>
+        <p class="card-text"><br>
+          Kaunis kesäpäivä Porvoossa joen rannalla ja istun laivan kannella.</p>
+          <table class="table table-dark tableborn">
+            <thead>
+            <tr>
+            <th>Syntymä-aika</th>
+              <th>Syntymäpaikka</th>
+            </tr>
+              </thead>
+            <tbody>
+              <tr>
+            <td>1977</td>
+            <td>Hämeenlinna</td>
+            </tr>
+            </tbody>
+          </table>
+        <p class="card-text"><small class="text-muted">Last updated 16.1.2023</small></p>
+        
+        
+      </div>
+    </div>
+  </div>
 </div>
+
+
+
+
+
+
+
+<table class="table tablemydata table-striped-columns table-dark">
+  <caption>Perustietoja taulukon muodossa, data haetaan tietokannasta</caption>
+ <thead> 
+ <tr>
+  <th>Id:</th>
+  <th>Informaatio:</th>
+ </tr>
+</thead> 
+
+<tbody>
+  <tr>
+<td><li *ngFor="let x of mydatas">{{ x.id }}</li></td>
+<td><li *ngFor="let x of mydatas">{{ x.info}}</li></td>
+</tr>
+  
+
+  </tbody>  
+</table>
+</section>
+
+
+</main>

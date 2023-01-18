@@ -1,0 +1,29 @@
+.hamburgermenu {
+    background-color: #2222229a;
+    border: 1px rgb(74, 74, 74) solid;
+    padding-top: 5px;
+}
+
+a {
+    color: rgb(209, 209, 209);
+}
+a:hover {
+    color: rgb(118, 250, 246);
+}
+
+
+.hamburgermenu:hover {
+    background-color: #4545459a;
+    border: 1px rgb(228, 228, 228) dashed;
+}
+.navbar-nav, .navbar-text {
+    display: none;
+}
+
+@media only screen and (min-width: 426px) {
+    .navbar-nav, .navbar-text {
+        display: flex;
+        flex-direction: row;
+        font-size: 1.4rem;
+    }
+  }

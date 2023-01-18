@@ -1,0 +1,16 @@
+
+
+footer {
+    font-size: 1.3rem;
+    background-color: #2222229a;
+}
+
+.darkhover {
+   color: rgb(147, 147, 147);
+}
+
+.darkhover:hover{
+    color: rgb(2, 150, 150);
+    background-color: transparent;
+    
+}

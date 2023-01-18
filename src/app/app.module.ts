@@ -9,6 +9,15 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { StudiesComponent } from './studies/studies.component';
 import { MeComponent } from './me/me.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { EtusivuComponent } from './etusivu/etusivu.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatIconModule } from '@angular/material/icon';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -17,17 +26,23 @@ import { HobbiesComponent } from './hobbies/hobbies.component';
     StudiesComponent,
     MeComponent,
     HobbiesComponent,
+    JobsComponent,
+    EtusivuComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    MatMenuModule,
+    MatIconModule,
 // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
 // and returns simulated server responses.
 // Remove it when a real server is ready to receive requests.
 	HttpClientInMemoryWebApiModule.forRoot(
  	InMemoryDataService, { dataEncapsulation: false }
-)
+),
+BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

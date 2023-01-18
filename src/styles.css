@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body {
-    background-color: rgb(231, 251, 231);
-    color: rgb(11, 11, 19);
+    background-color: #222222;
+    color: rgba(250, 254, 252, 0.959);
 }
 
-
+/*
 a:link, a:visited {
     background-color: rgb(192, 192, 192);
     color: black;
@@ -19,3 +19,6 @@ a:link, a:visited {
     background-color: black;
     color: white;
   }
+*/
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

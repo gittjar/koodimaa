@@ -6,6 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Jarnos Angular kotisivut (.Net22S)';
-  extrainfo = 'Olen viesti app.componentista!';
+ // title = 'pääotsikko jos asettaa';
+  extrainfo = 'Footer here! 2023';
 }

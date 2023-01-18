@@ -4,15 +4,17 @@ class Mydata {
 }
 
 class Hobby {
-	startyear: number | undefined;
 	id: number | undefined;
+	item: string | undefined;
 	info: string | undefined;
+	image: string | undefined;
 }
 
 class Study {
 	id: number | undefined;
-	info: string | undefined;
+	valmistumisvuosi: number | undefined;
+	koulu: string | undefined;
 }
 
-export {Mydata, Study, Hobby};
+export {Mydata, Hobby, Study};
 
