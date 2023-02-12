@@ -14,6 +14,7 @@ import { EtusivuComponent } from './etusivu/etusivu.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 
@@ -28,6 +29,7 @@ import { MatIconModule } from '@angular/material/icon';
     HobbiesComponent,
     JobsComponent,
     EtusivuComponent,
+    PortfolioComponent,
     
   ],
   imports: [

@@ -14,7 +14,8 @@ import { Study } from './dataclasses';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const mydatas: Mydata[]= [
-    {id: 101, info: 'Angular, C#, .NET, JS, SQL ja HTML5/CSS opiskelija'},
+    {id: 101, info: 'Angular, C#, .NET, JS, SQL, Node, Azure ja HTML5/CSS opiskelija'},
+    {id: 1001, info: 'Windows, Linux, MacOs, Android ja iOS'},
     {id: 102, info: 'Asuu Porvoossa'},
     {id: 103, info: 'Lempiruokana Mexicana pizza'},
     {id: 104, info: 'Mielijuomana kuplavesi'},
@@ -26,7 +27,7 @@ export class InMemoryDataService implements InMemoryDbService {
   	const mydatashobby: Hobby[]= [
   	{id: 11, item:'Nyrkkeilyhanskat', image:'../../assets/images/autiotalo.jpg', info: 'Kuntonyrkkeilyä pari kertaa per viikko.'},
   	{id: 12, item:'Sukset', image:'../../assets/images/silta.jpg', info: 'Ulkoliikuntaa vuodenaikojen mukaan mm. murtomaahiihtoa.'},
-    {id: 13, item:'Läppäri', image:'../../assets/images/coding_5.jpg', info: 'Tietotekniikka yleisellä tasolla.'},
+    {id: 13, item:'Läppäri', image:'../../assets/images/coding_5.jpg', info: 'Tietotekniikka.'},
     {id: 14, item:'Skeittilauta', image:'../../assets/images/kukka.jpg', info: 'Rullailua kesällä betonilla.'},
     {id: 15, item:'Jalkapallo', image:'../../assets/images/autiotalo.jpg', info: 'Apuvalmentajana mukana juniorifutiksessa.'},
    ];
