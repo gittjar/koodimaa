@@ -9,8 +9,18 @@
   }
   h5 {
     font-size: 2.5rem;
-    color:rgb(242, 118, 232)
+    color: rgb(118, 250, 246);
+    font-weight: 800;
   }
+  .black-back {
+    background-color: black;
+    padding: 5px;
+    width: 100%;
+    border-radius: 5%;
+    
+  }
+
+
   .carousel-indicators {
     bottom: -10px;
     margin-left:-5%;/* whatever */
