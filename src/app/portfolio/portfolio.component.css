@@ -1,9 +1,18 @@
+.group-listaryhma {
+    display: flex;
+    flex-direction: row;
+}
+
 .listaryhma-1{
-    margin-left: 3%;
-    margin-right: 3%;
-    margin-top: 1%;
+ margin: 1%;
     
 }
+
+.listaryhma-2{
+  margin: 1%; 
+}
+
+
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
