@@ -1,5 +1,82 @@
 .listaryhma-1{
     margin-left: 3%;
     margin-right: 3%;
-    width: 270px;
+    margin-top: 1%;
+    
+}
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  font-family: "open sans", sans-serif; 
+}
+
+header{
+  min-height: 80vh;
+  background-color: #012543;
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple-1,
+.ripple-2,
+.ripple-3,
+.ripple-4,
+.ripple-5{
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #fff;
+  border-radius: 50%;
+  transform: translate3d(-50%, 50%, 0);
+  animation-name: ripple;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  will-change: transform, opacity;
+}
+
+.ripple-1{
+  animation-delay: 0;
+}
+
+.ripple-2{
+  animation-delay: 11s;
+}
+
+.ripple-3{
+  animation-delay: 21s;
+}
+
+.ripple-4{
+  animation-delay: 31s;
+}
+
+.ripple-4{
+  animation-delay: 41s;
+}
+
+.ripple-5{
+  animation-delay: 51s;
+}
+
+
+
+@keyframes ripple{
+  0%{
+    transform: translate3d(-50%, 50%, 0) scale(0);
+    opacity: .33;
+  }
+  100%{
+    transform: translate3d(-50%, 50%, 0) scale(2000);
+    opacity: 0;
+  }
 }

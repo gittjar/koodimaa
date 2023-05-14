@@ -1,12 +1,76 @@
-<div class="list-group listaryhma-1 ">
-    <a href="#" class="list-group-item list-group-item-action">A simple default list group item</a>
+
+<header>
+
+
+    <div class="ripple-1"></div>
+    <div class="ripple-2"></div>
+    <div class="ripple-3"></div>
+    <div class="ripple-4"></div>
+    <div class="ripple-5"></div>
+      
+
+
+    <div class="list-group listaryhma-1 ">
+      <div class="list-group">
+        <div class="list-group-item list-group-item list-group-item-dark" aria-current="true">
+          <div class="d-flex w-100 justify-content-between">
+            <h1 class="mb-1 m-1">Angular</h1>
+            <small class="m-2">1 days ago</small>
+          </div>
+          <p class="m-1">Angularilla tekemiäni web -ohjelmia.</p>
+        </div>
+        <div *ngFor="let x of angulars">{{x.id}}</div>
+
+                <!--Keep Clean App-->
+                <a href="https://keep-clean.web.app/" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h2 class="m-2">Keep Clean</h2>
+                    <p class="text-body-secondary m-2">
+                      <span class="badge text-bg-info p-2">17.4.2023</span>
+                    </p>
+                  </div>
+                  <p class="m-2">Helsinki Business Collegen Demo Session kevät 2023 tehty webapp, joka on informaatiopeneeli yleisten
+                    wc -tilojen käyttäjille. Ohjelma antaa informaatiota viimeisestä siivouskerrasta. Käyttömuoto: Tabletti vaakatasossa.
+                  </p>
+                  <small class="text-body-secondary m-4">
+                    <span class="badge text-bg-success p-2 text-body-secondary m-2">Ready</span>
+                  </small>
+                </a>
+
+                <!--Phone store-->
+                <a href="https://puhelinkauppa.web.app/" class="list-group-item list-group-item-action">
+                  <div class="d-flex w-100 justify-content-between">
+                    <h2 class="m-2">Phonemodel store</h2>
+                    <p class="text-body-secondary m-2">
+                      <span class="badge text-bg-info p-2">5.3.2023</span>
+                    </p>
+                  </div>
+                  <p class="m-2">Kirkuvan oranssi puhelinkauppa, jossa muutama puhelinmalli, mallien omat sivut, ostomahdollisuus ja ostoskori.
+                    Tehty harjoitustyönä koulutehtävänä.
+                  </p>
+                  <small class="text-body-secondary m-4">
+                    <span class="badge text-bg-success p-2 text-body-secondary m-2">Ready</span>
+                  </small>
+                </a>
+
+        <!--AIKA JA SÄÄ ohjelma-->
+        <a href="https://aika.web.app/" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h2 class="m-2">Angular aika ja sää</h2>
+            <p class="text-body-secondary m-2">
+              <span class="badge text-bg-info p-2">19.4.2023</span>
+            </p>
+          </div>
+          <p class="m-2">Ohjelma näyttää ajan, päivän ja vuoden. Lisäksi ohjelma hakee tietokannasta
+            säätiedot, ennusteen ja säävaroitukset Helsingille. Käyttäjä voi hakea myös säätietoja kirjoittamalla paikan nimen.
+            Kohteen värit on valittu räikeiksi ja erikoisiksi tarkoituksella.
+          </p>
+          <small class="text-body-secondary m-4">
+            <span class="badge text-bg-success p-2 text-body-secondary m-2">Ready</span>
+          </small>
+        </a>
+
+      </div>
+    </div>
   
-    <a href="#" class="list-group-item list-group-item-action list-group-item-primary">A simple primary list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">A simple secondary list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-success">A simple success list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-danger">A simple danger list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-warning">A simple warning list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-info">A simple info list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-light">A simple light list group item</a>
-    <a href="#" class="list-group-item list-group-item-action list-group-item-dark">A simple dark list group item</a>
-  </div>
+  </header>
