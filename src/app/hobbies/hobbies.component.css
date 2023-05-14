@@ -19,6 +19,7 @@ h2{
     margin-left: 2%;
     margin-right: 2%;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .hobby-kortti {
