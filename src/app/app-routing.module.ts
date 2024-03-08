@@ -10,10 +10,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 // Reitit tulevat routes -taulukkoon joka on tyypilt��n Routes. Tietotyyppi kertoo ett� taulukkoon tulee Routes -tyyppisi� olioita.
 
 const routes: Routes = [
-  {path: 'me', component: MeComponent},
-  {path: 'studies', component: StudiesComponent},
-  {path: 'hobbies', component: HobbiesComponent},
-  {path: 'jobs', component: JobsComponent},
+  {path: 'pricelist', component: MeComponent},
   {path: 'etusivu', component: EtusivuComponent},
   {path: 'portfolio', component: PortfolioComponent},
   {path: '', redirectTo: '/etusivu', pathMatch: 'full'},  // redirect to etusivu
