@@ -1,30 +1,46 @@
-.hamburgermenu {
+.navbar {
+    position: sticky;
+    top: 0; /* Stick to the top of the page */
+    z-index: 1000; /* Ensure it sits on top of other elements */
     background-color: #2222229a;
-    border: 1px rgb(74, 74, 74) solid;
+  }
+  
+  .hamburgermenu {
+    background-color: #2222229a;
+    border: 2px rgb(74, 74, 74) solid;
     padding-top: 5px;
-}
-
-a {
-    color: rgb(209, 209, 209);
-}
-a:hover {
-    color: rgb(118, 250, 246);
-}
-
-
-.hamburgermenu:hover {
+    box-shadow: 0px 0px 10px 0px rgb(74, 74, 74);
+  }
+  
+  a {
+    color: rgb(118, 250, 246) !important;
+    font-weight: 800;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid rgb(118, 250, 246);
+    border-radius: 5px;
+    font-size: 2rem;
+  }
+  
+  a:hover {
+    border: 2px solid rgb(87, 188, 184);
+  }
+  
+  .hamburgermenu:hover {
     background-color: #4545459a;
     border: 1px rgb(228, 228, 228) dashed;
-}
-.navbar-nav, .navbar-text {
+  }
+  
+  .navbar-nav, .navbar-text {
     display: none;
-}
-
-@media only screen and (min-width: 426px) {
+  }
+  
+  @media only screen and (min-width: 426px) {
     .navbar-nav, .navbar-text {
-        display: flex;
-        flex-direction: row;
-        font-size: 1.4rem;
+      display: flex;
+      flex-direction: row;
+      font-size: 1.4rem;
     }
     .hamburgermenu {display: none;}
   }

@@ -1,16 +1,10 @@
 .group-listaryhma {
-    display: flex;
-    flex-direction: row;
+
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
-.listaryhma-1{
- margin: 1%;
-    
-}
 
-.listaryhma-2{
-  margin: 1%; 
-}
 
 
 
@@ -37,17 +31,17 @@ header{
 .ripple-2,
 .ripple-3,
 .ripple-4,
-.ripple-5{
+.ripple-5 {
   height: 1px;
   width: 1px;
   position: absolute;
-  left: 0;
-  bottom: 0;
+  left: 50%; /* This will center the lines */
+  bottom: 50%; /* This will center the lines */
   background-color: #fff;
   border-radius: 50%;
-  transform: translate3d(-50%, 50%, 0);
+  transform: translate3d(-50%, -50%, 0);
   animation-name: ripple;
-  animation-duration: 8s;
+  animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
   will-change: transform, opacity;
@@ -85,7 +79,24 @@ header{
     opacity: .33;
   }
   100%{
-    transform: translate3d(-50%, 50%, 0) scale(2000);
+    transform: translate3d(-50%, 50%, 0) scale(5000);
     opacity: 0;
   }
+}
+
+@media screen and (max-width: 768px){
+  .ripple-1,
+  .ripple-2,
+  .ripple-3,
+  .ripple-4,
+  .ripple-5{
+    display: none;
+  }
+
+  .group-listaryhma {
+
+    margin-left: 5%;
+    margin-right: 5%;
+}
+  
 }

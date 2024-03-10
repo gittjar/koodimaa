@@ -13,19 +13,19 @@
 
     <article class="list-group listaryhma-1 ">
       <div class="list-group">
-        <div class="list-group-item list-group-item list-group-item-primary" aria-current="true">
+        <div class="list-group-item list-group-item list-group-item-info" aria-current="true">
           <div class="d-flex w-100 justify-content-between">
-            <h1 class="mb-1 m-1">Angular</h1>
-            <small class="m-2">1 days ago</small>
+            <h1 class="mb-1 m-1">Ohjelmointiprojekteja</h1>
+            <small class="m-2">9.3.2024</small>
           </div>
-          <p class="m-1">Angularilla tekemiäni web -ohjelmia.</p>
+          <p class="m-1">Angularilla, Reactilla ja C# tekemiäni web -ohjelmia.</p>
         </div>
-        <div *ngFor="let x of angulars">
+        <div *ngFor="let x of programs">
 
                 <!--App-->
                 <a href="{{x.url}}" class="list-group-item list-group-item-action">
                   <div class="d-flex w-100 justify-content-between">
-                    <h2 class="m-2">{{x.name}}</h2>
+                    <h2 class="m-2">{{x.name}} <i class="bi bi-box-arrow-up-right"></i></h2>
                     <p class="text-body-secondary m-2">
                       <span class="badge text-bg-info p-2">{{x.update}}</span>
                     </p>
@@ -45,39 +45,8 @@
       </div>
     </article>
 
-    <article class="list-group listaryhma-2 ">
-      <div class="list-group">
-        <div class="list-group-item list-group-item list-group-item-primary" aria-current="true">
-          <div class="d-flex w-100 justify-content-between">
-            <h1 class="mb-1 m-1">C# ja .NET</h1>
-            <small class="m-2">1 days ago</small>
-          </div>
-          <p class="m-1">C# tehtyjä ohjelmia.</p>
-        </div>
-        <div *ngFor="let c of csharp">
-
-                <!--App-->
-                <a href="{{c.url}}" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h2 class="m-2">{{c.name}}</h2>
-                    <p class="text-body-secondary m-2">
-                      <span class="badge text-bg-info p-2">{{c.update}}</span>
-                    </p>
-                  </div>
-                 
-                  <p class="m-2">{{c.detail}}
-                  </p>
-               
-                  <small class="text-body-secondary m-4">
-                    <span class="badge text-bg-success p-2 text-body-secondary m-2"
-                    *ngIf="c.status === 'valmis'">{{c.status}}</span>
-                    <span class="badge text-bg-warning p-2 text-body-secondary m-2"
-                    *ngIf="c.status === 'kesken'">{{c.status}}</span>
-                  </small>
-                </a>
-        </div>
-      </div>
-    </article>
+  
+   
 
   </section>
   

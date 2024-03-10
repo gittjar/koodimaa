@@ -7,7 +7,8 @@
   flex-direction: row;
 }
 
-.kortti, .table {
+
+.kortti {
   margin: 3px;
   border: 1px solid rgb(70, 70, 70);
   width: 100%;
@@ -17,14 +18,69 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 0.5%;
   padding: 0.5%;
+}
+
+td {
+  border: 1px solid rgb(70, 70, 70);
+  padding: 1.5%;
+  text-align: left !important; /* This will center the text */
+  font-size: 1.5rem;
+}
+
+th {
+  border: 1px solid rgb(70, 70, 70);
+  padding: 1.5%;
+  text-align: left !important; /* This will center the text */
+  font-size: 1.5rem;
 }
 
 ul, li {
   list-style-type: none;
   font-size: 1.5rem;
   color: rgb(237, 245, 241);
+}
+
+.container {
+  margin: 10px;
+  width: 320px;
+  text-align: center;
+}
+
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input, textarea{
+  margin: 5px;
+  padding: 2rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+input:active, textarea:active {
+  background-color: transparent;
+}
+
+input:focus, textarea:focus {
+  background-color: transparent;
+  color:azure;
+}
+
+.send-button {
+  margin: 5px;
+  padding: 1rem;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: 1px solid rgb(118, 250, 246);
+  color: rgb(118, 250, 246);}
+
+.send-button:hover {
+  background-color: rgb(118, 250, 246);
+  color: black;
 }
 
 /* CSS for smaller screens (mobile devices and tablets) */
@@ -34,22 +90,4 @@ ul, li {
   }
 }
 
-.kortti, .table {
-  margin: 3px;
-  border: 1px solid rgb(70, 70, 70);
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  max-height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0.5%;
-  padding: 0.5%;
-}
 
-ul, li {
-  list-style-type: none;
-  font-size: 1.5rem;
-  color: rgb(237, 245, 241);
-}

@@ -1,42 +1,55 @@
+body {
+  text-align: center; /* Center all text */
+}
+
 .carousel-item {
-    height: 65vh;
-    min-height: 350px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  height: 65vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h5 {
+  font-size: 2.5rem;
+  color: rgb(118, 250, 246);
+  font-weight: 800;
+  text-shadow: 1px 1px 1px #dad9d9;
+}
+
+.black-back {
+  background-color: black;
+  opacity: 0.7;
+  padding: 6px;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.carousel-indicators {
+  bottom: -10px;
+  left: 0; /* Align the indicators to the left */
+}
+
+@media only screen and (min-width: 426px) {
+  .navbar-nav, .navbar-text {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.4rem;
   }
   h5 {
     font-size: 2.5rem;
-    color: rgb(118, 250, 246);
-    font-weight: 800;
   }
-  .black-back {
-    background-color: black;
-    padding: 5px;
-    width: 100%;
-    border-radius: 5%;
-    
-  }
-
-
-  .carousel-indicators {
-    bottom: -10px;
-    margin-left:-5%;/* whatever */
 }
 
-  @media only screen and (min-width: 426px) {
-    .navbar-nav, .navbar-text {
-        display: flex;
-        flex-direction: row;
-        font-size: 1.4rem;
-    }
-    .carousel-indicators {
-      bottom: -10px;
-      margin-left:-15%;/* whatever */
+@media only screen and (max-width: 426px) {
+  .navbar-nav, .navbar-text {
+    display: none;
   }
-  h5 {
-    font-size: 3.5rem;
+  .hamburgermenu {display: none;}
+
+  .container {
+    margin: 10px;
   }
-  }
+}

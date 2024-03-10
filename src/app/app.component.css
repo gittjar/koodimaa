@@ -1,4 +1,14 @@
 
+.left-palkki {
+    background-color: rgb(118, 250, 246);
+width: 10px;   
+height: 100%;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 9999;
+
+}
 
 footer {
     font-size: 1.3rem;
@@ -10,7 +20,7 @@ footer {
 }
 
 .darkhover:hover{
-    color: rgb(2, 150, 150);
+    color: rgb(118, 250, 246);
     background-color: transparent;
     
 }
