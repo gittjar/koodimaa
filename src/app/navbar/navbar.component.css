@@ -4,20 +4,19 @@
     z-index: 1000; /* Ensure it sits on top of other elements */
     background-color: #2222229a;
   }
-  
+  /*
   .hamburgermenu {
     background-color: #2222229a;
     border: 2px rgb(74, 74, 74) solid;
-    padding-top: 5px;
     box-shadow: 0px 0px 10px 0px rgb(74, 74, 74);
-  }
+  }*/
   
   a {
     color: rgb(118, 250, 246) !important;
     font-weight: 800;
     text-decoration: none;
     padding: 10px;
-    margin: 5px;
+    margin: 15px;
     border: 2px solid rgb(118, 250, 246);
     border-radius: 5px;
     font-size: 2rem;
@@ -43,4 +42,26 @@
       font-size: 1.4rem;
     }
     .hamburgermenu {display: none;}
+
   }
+
+    @media only screen and (max-width: 426px) {
+        .navbar-nav, .navbar-text {
+        display: none;
+        }
+        .hamburgermenu {
+            display: block;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #2222229a;
+            border: 0;
+
+        }
+
+        a {
+            font-size: 1.5rem;
+            border: 0;
+        }
+    }

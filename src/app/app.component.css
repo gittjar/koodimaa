@@ -1,7 +1,7 @@
 
 .left-palkki {
-    background-color: rgb(118, 250, 246);
-width: 10px;   
+background: linear-gradient(to bottom, rgb(118, 250, 246), transparent);
+width: 4px;   
 height: 100%;
 position: fixed;
 top: 0;
@@ -23,4 +23,8 @@ footer {
     color: rgb(118, 250, 246);
     background-color: transparent;
     
+}
+
+a { 
+    text-decoration: none;
 }

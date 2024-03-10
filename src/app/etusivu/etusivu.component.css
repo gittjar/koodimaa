@@ -50,6 +50,11 @@ h5 {
   .hamburgermenu {display: none;}
 
   .container {
-    margin: 10px;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  h5 {
+    font-size: 1.3rem;
   }
 }

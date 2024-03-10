@@ -29,11 +29,11 @@
             <td>100-200 € (Alv 0%) </td>
             </tr>
             <tr>
-              <td>alle 5 sivun verkkosivu</td>
+              <td>alle 5 sivun verkkosivusto</td>
               <td>500-700 € (Alv 0%) </td>
             </tr>
             <tr>
-              <td>Laajempi verkkosivu</td>
+              <td>Laajempi verkkosivusto</td>
               <td>Sovitaan erikseen </td>
             </tr>
             <tr>
@@ -63,20 +63,19 @@
 
 
 
-<table class="table tablemydata table-striped-columns table-dark">
+<table class="table tablemydata table-striped-columns table-dark mt-4">
   <caption></caption>
  <thead> 
  <tr>
-  <th>Id:</th>
-  <th>Informaatio:</th>
+  <th>Informaatiot ja ohjelmointiteknologiat</th>
  </tr>
 </thead> 
 
 <tbody>
   <tr>
-<td><li *ngFor="let x of mydatas">{{ x.id }}</li></td>
-<td><li *ngFor="let x of mydatas">{{ x.info}}</li></td>
-</tr>
+    <ul class="mt-4">
+      <li *ngFor="let x of mydatas"><i class="bi bi-info-square"></i>  {{ x.info }}</li>
+    </ul></tr>
   
 
   </tbody>  
@@ -89,26 +88,26 @@
   <h2>Ota yhteyttä</h2>
   <form>
     <div class="mb-3">
-      <label for="name" class="form-label">Nimi *</label>
-      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+      <label for="name" class="form-label">Nimi <span class="red">*</span></label>
+      <input type="text" class="form-control" id="name" placeholder="">
     </div>
     <div class="mb-3">
       <label for="company" class="form-label">Yritys</label>
-      <input type="text" class="form-control" id="company" placeholder="Enter your company">
+      <input type="text" class="form-control" id="company" placeholder="">
     </div>
     <div class="mb-3">
-      <label for="email" class="form-label">Email *</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      <label for="email" class="form-label">Email <span class="red">*</span></label>
+      <input type="email" class="form-control" id="email" placeholder="">
     </div>
     <div class="mb-3">
       <label for="phone" class="form-label">Puhelinnumero</label>
-      <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+      <input type="tel" class="form-control" id="phone" placeholder="">
     </div>
     <div class="mb-3">
       <label for="message" class="form-label">Vapaa Teksti</label>
-      <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+      <textarea class="form-control" id="message" rows="3" placeholder="Kerro tarkemmin millaista verkkopalvelua olet hankkimassa"></textarea>
     </div>
-    <button type="submit" class="send-button">Lähetä</button>
+    <button type="submit" class="send-button">Lähetä <i class="bi bi-send-fill"></i></button>
   </form>
 </div>
 </div>

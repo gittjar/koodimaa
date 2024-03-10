@@ -97,6 +97,9 @@ header{
 
     margin-left: 5%;
     margin-right: 5%;
-}
+   }
   
+  header {
+      background-color: #2222229a !important;
+    }
 }
