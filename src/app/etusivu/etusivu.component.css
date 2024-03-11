@@ -21,7 +21,7 @@ h5 {
 
 .black-back {
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.8;
   padding: 6px;
   width: 100%;
   border-radius: 5%;
@@ -49,12 +49,10 @@ h5 {
   }
   .hamburgermenu {display: none;}
 
-  .container {
-    margin-top: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
+
+
   h5 {
     font-size: 1.3rem;
   }
+
 }

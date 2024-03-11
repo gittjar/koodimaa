@@ -1,0 +1,8 @@
+.privacy-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-left: 25%;
+    margin-right: 25%;
+}

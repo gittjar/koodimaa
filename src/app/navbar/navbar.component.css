@@ -3,6 +3,7 @@
     top: 0; /* Stick to the top of the page */
     z-index: 1000; /* Ensure it sits on top of other elements */
     background-color: #2222229a;
+    border: 0;
   }
   /*
   .hamburgermenu {
@@ -26,10 +27,7 @@
     border: 2px solid rgb(87, 188, 184);
   }
   
-  .hamburgermenu:hover {
-    background-color: #4545459a;
-    border: 1px rgb(228, 228, 228) dashed;
-  }
+
   
   .navbar-nav, .navbar-text {
     display: none;
@@ -51,14 +49,19 @@
         }
         .hamburgermenu {
             display: block;
-            padding-top: 5px;
+            padding-top: 15px;
             padding-bottom: 5px;
-            padding-left: 10px;
-            padding-right: 10px;
             background-color: #2222229a;
             border: 0;
-
         }
+        .hamburger-icon {
+            font-size: 3.5rem !important;
+        }
+
+        .hamburger-icon:hover {
+            color: rgb(118, 250, 246);
+        }
+
 
         a {
             font-size: 1.5rem;

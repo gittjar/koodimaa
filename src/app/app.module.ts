@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StudiesComponent } from './studies/studies.component';
 import { MeComponent } from './me/me.component';
-import { HobbiesComponent } from './hobbies/hobbies.component';
+import { PrivacyComponent } from './privacy/privacy.component';
 import { JobsComponent } from './jobs/jobs.component';
 import { EtusivuComponent } from './etusivu/etusivu.component';
 import { MatMenuModule } from '@angular/material/menu';
@@ -26,7 +26,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     NavbarComponent,
     StudiesComponent,
     MeComponent,
-    HobbiesComponent,
+    PrivacyComponent,
     JobsComponent,
     EtusivuComponent,
     PortfolioComponent,
