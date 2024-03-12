@@ -54,12 +54,12 @@
             background-color: #2222229a;
             border: 0;
         }
-        .hamburger-icon {
-            font-size: 3.5rem !important;
-        }
+   
 
-        .hamburger-icon:hover {
+        .hamburgermenu:hover {
             color: rgb(118, 250, 246);
+            background-color: transparent;
+            border: 1px dashed rgb(118, 250, 246);
         }
 
 
