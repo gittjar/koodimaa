@@ -81,6 +81,20 @@ input:focus, textarea:focus {
   color:azure;
 }
 
+.send-link {
+  text-decoration: none !important;
+  color: rgb(118, 250, 246);
+  font-size: 2.3rem;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.send-link:hover {
+  color: black;
+}
+
 .send-button {
   margin: 5px;
   padding: 1rem;

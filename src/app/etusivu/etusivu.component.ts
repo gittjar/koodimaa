@@ -11,6 +11,7 @@ export class EtusivuComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.ngAfterViewInit();
   }
 
   ngAfterViewInit(): void {
