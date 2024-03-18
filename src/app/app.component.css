@@ -13,18 +13,46 @@ z-index: 9999;
 footer {
     font-size: 1.3rem;
     background-color: #2222229a;
-}
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+  }
+  
 
-.darkhover {
-   color: rgb(147, 147, 147);
-}
-
-.darkhover:hover{
+  
+  .darkhover {
+    color: rgb(147, 147, 147);
+  }
+  
+  .darkhover:hover {
     color: rgb(118, 250, 246);
     background-color: transparent;
-    
-}
-
-a { 
+  }
+  
+  a { 
     text-decoration: none;
-}
+  }
+  
+  .navbar-logo {
+    width: 50% !important;
+    height: 50% !important;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .text-muted {
+    color: #ccc !important;
+  }
+  
+  ul.nav {
+    margin-bottom: 20px;
+  }
+  
+  ul.nav li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  ul.nav li:last-child {
+    margin-right: 0;
+  }

@@ -4,7 +4,12 @@
     z-index: 1000; /* Ensure it sits on top of other elements */
     background-color: #2222229a;
     border: 0;
+    
   }
+
+
+
+
   
   .hamburgermenu {
     background-color: #2222229a;
@@ -30,13 +35,30 @@
   a:hover {
     border: 2px solid rgb(87, 188, 184);
   }
+
+
   
 
   
   .navbar-nav, .navbar-text {
     display: none;
   }
+
+
+    
   
+
+  /* Desktop CSS rules */ 
+  @media only screen and (min-width: 769px) { 
+    
+
+  
+  }
+
+
+
+  
+
   @media only screen and (min-width: 426px) {
     .navbar-nav, .navbar-text {
       display: flex;
@@ -44,6 +66,11 @@
       font-size: 1.4rem;
     }
     .hamburgermenu {display: none;}
+
+    .navbar-logo {
+      width: 50% !important;
+      height: 50% !important;
+    }
 
   }
 
