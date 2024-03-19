@@ -6,28 +6,20 @@ import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { StudiesComponent } from './studies/studies.component';
 import { MeComponent } from './me/me.component';
 import { PrivacyComponent } from './privacy/privacy.component';
-import { JobsComponent } from './jobs/jobs.component';
 import { EtusivuComponent } from './etusivu/etusivu.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
-
-
-
-
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    StudiesComponent,
     MeComponent,
     PrivacyComponent,
-    JobsComponent,
     EtusivuComponent,
     PortfolioComponent,
     

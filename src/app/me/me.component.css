@@ -1,7 +1,31 @@
+
+
+
 .me-sivu {
  margin-left: 25%;
   margin-right: 25%;
 }
+
+@keyframes fadeInOut {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.me-sivu::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50rem;
+  border-radius: 0;
+  background: rgb(118, 250, 246);
+  z-index: -1;
+  animation: fadeInOut 240s infinite;
+}
+
+
 .me-sivu-keskiosa {
   display: flex;
   flex-direction: column;

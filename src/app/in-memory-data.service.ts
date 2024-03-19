@@ -4,8 +4,7 @@
 import { Injectable } from '@angular/core';
 import { InMemoryDbService } from 'angular-in-memory-web-api';
 import { Mydata } from './dataclasses';
-import { Hobby } from './dataclasses';
-import { Study } from './dataclasses';
+
 
 @Injectable({
   providedIn: 'root',
@@ -30,19 +29,13 @@ export class InMemoryDataService implements InMemoryDbService {
 
   ];
   
-  	const mydatashobby: Hobby[]= [
 
-   ];
-
-   const mydatasstudies: Study[]= [
-
-   ];
 
   
   // t�h�n yl�puolelle voi laittaa studies taulukko
   // laita import studies ylös dataclasses (katso mallista!)
   
-    return {mydatas, mydatashobby, mydatasstudies};
+    return {mydatas};
  
   }
   }
