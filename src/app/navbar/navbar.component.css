@@ -27,14 +27,14 @@
     text-decoration: none;
     padding: 10px;
     margin: 15px;
-    border: 2px solid rgb(118, 250, 246);
     border-radius: 5px;
     font-size: 2rem;
   }
   
   a:hover {
-    border: 2px solid rgb(87, 188, 184);
-  }
+    color: rgb(118, 250, 246);
+    background-color: transparent;
+    border: 1px dashed rgb(118, 250, 246);}
 
 
   

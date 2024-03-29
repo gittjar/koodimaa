@@ -42,15 +42,21 @@ footer {
   a { 
     text-decoration: none;
   }
-  
-  .navbar-logo {
-    width: 50% !important;
-    height: 50% !important;
-    display: block;
-    margin: 0 auto;
-    align-self: flex-start;
-    margin-left: 20px;
+
+  .footerrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
+  .textit {
+    text-align: right;
+
+  }
+
+
+  
+
   
   .text-muted {
     color: #ccc !important;
@@ -68,3 +74,15 @@ footer {
   ul.nav li:last-child {
     margin-right: 0;
   }
+
+@media screen and (max-width: 426px) {
+  .footerrow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .textit {
+    text-align: center;
+  }
+  
+}
