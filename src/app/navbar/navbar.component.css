@@ -32,10 +32,8 @@
   }
   
   a:hover {
-    color: rgb(118, 250, 246);
-    background-color: transparent;
-    border: 1px dashed rgb(118, 250, 246);}
-
+    color: rgb(91, 221, 217)!important;
+  }
 
   
 
