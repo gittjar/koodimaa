@@ -98,6 +98,10 @@ h5 {
     left: -15%; /* Align the indicators to the left */
   }
 
+  .button-projekteja {
+    font-size: 1.5rem;
+  }
+
 
   h5 {
     font-size: 1.3rem;

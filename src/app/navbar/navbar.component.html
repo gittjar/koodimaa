@@ -1,13 +1,10 @@
 
 <nav class="navbar navbar-inverse kokosivumenu">
 
-
-
-
-
- 
+  
     <button mat-icon-button [matMenuTriggerFor]="menu" class="hamburgermenu">
-        <mat-icon>toc</mat-icon>
+      
+      <i class="bi bi-list"></i>
       </button>
       <mat-menu #menu="matMenu">
 
@@ -15,11 +12,13 @@
           <mat-icon>home</mat-icon>
           <span><a routerLink="/etusivu">Etusivu <i class="bi bi-arrow-right"></i></a></span>
         </button>
+        <hr>
 
         <button mat-menu-item>
             <mat-icon>face</mat-icon>
             <span><a routerLink="/pricelist">Informaatio <i class="bi bi-arrow-right"></i></a></span>
           </button>
+          <hr>
 
         <button mat-menu-item>
           <mat-icon>computer</mat-icon>
