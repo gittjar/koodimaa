@@ -1,15 +1,14 @@
 
+
 <header>
+  <div class="ripple-1"></div>
+  <div class="ripple-2"></div>
+  <div class="ripple-3"></div>
+  <div class="ripple-4"></div>
+  <div class="ripple-5"></div>
 
+  <section class="group-listaryhma">
 
-    <div class="ripple-1"></div>
-    <div class="ripple-2"></div>
-    <div class="ripple-3"></div>
-    <div class="ripple-4"></div>
-    <div class="ripple-5"></div>
-      
-
-<section class="group-listaryhma">
 
     <article class="list-group listaryhma-1 mt-5 mb-5">
       <div class="list-group">
@@ -19,35 +18,37 @@
             <small class="m-2">9.3.2024</small>
           </div>
           <p class="m-1">Angularilla, Reactilla ja C# tekemiäni web -ohjelmia.</p>
+          <div class="filters">
+            <select [(ngModel)]="selectedLanguage" (change)="onLanguageChange($event)">
+              <option value="" selected>All</option>
+              <option value="Angular">Angular</option>
+              <option value="React">React</option>
+              <option value="C#">C#</option>
+            </select>
+            <button class="btn-primary" type="button" (click)="sortPrograms('new')">Uusin päivitys</button>
+            <button class="btn-primary" type="button" (click)="sortPrograms('old')">Vanhin päivitys</button>
+          </div>
         </div>
-        <div *ngFor="let x of programs">
 
-                <!--App-->
-                <a href="{{x.url}}" class="list-group-item list-group-item-action bg-dark">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h2 class="m-2 text-primary link-light">{{x.name}} <i class="bi bi-box-arrow-up-right"></i></h2>
-                    <p class="text-body-primary m-2">
-                      <span class="badge text-bg-info p-2">{{x.update}}</span>
-                    </p>
-                  </div>
-                 
-                  <p class="m-2 text-light">{{x.detail}}
-                  </p>
-               
-                  <small class="text-body-secondary m-4">
-                    <span class="badge text-bg-success p-2 text-body-secondary m-2"
-                    *ngIf="x.status === 'valmis'">{{x.status}}</span>
-                    <span class="badge text-bg-warning p-2 text-body-secondary m-2"
-                    *ngIf="x.status === 'kesken'">{{x.status}}</span>
-                  </small>
-                </a>
+
+
+        <div *ngFor="let x of filteredPrograms">
+          <!--App-->
+          <a href="{{x.url}}" class="list-group-item list-group-item-action bg-dark">
+            <div class="d-flex w-100 justify-content-between">
+              <h2 class="m-2 text-primary link-light">{{x.name}} <i class="bi bi-box-arrow-up-right"></i></h2>
+              <p class="text-body-primary m-2">
+                <span class="badge text-bg-info p-2">{{x.update}}</span>
+              </p>
+            </div>
+            <p class="m-2 text-light">{{x.detail}}</p>
+            <small class="text-body-secondary m-4">
+              <span class="badge text-bg-success p-2 text-body-secondary m-2" *ngIf="x.status === 'valmis'">{{x.status}}</span>
+              <span class="badge text-bg-warning p-2 text-body-secondary m-2" *ngIf="x.status === 'kesken'">{{x.status}}</span>
+            </small>
+          </a>
         </div>
       </div>
     </article>
-
-  
-   
-
   </section>
-  
-  </header>
+</header>

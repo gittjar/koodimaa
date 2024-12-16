@@ -1,41 +1,29 @@
-
 <section class="left-palkki"></section>
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
 
 <!-- Footer -->
 <div class="container">
-  <footer class="">
-          <div class="row">
-            <div class="col-12">
-              <ul class="nav justify-content-center">
-                <li class="nav-item"><a routerLink="/etusivu" class="nav-link px-2 darkhover">Etusivu</a></li>
-                <li class="nav-item"><a routerLink="/pricelist" class="nav-link px-2 darkhover">Informaatio</a></li>
-                <li class="nav-item"><a routerLink="/portfolio" class="nav-link px-2 darkhover">Projekteja</a></li>
-                <li class="nav-item"><a routerLink="/tietosuoja" class="nav-link px-2 darkhover">Tietosuojaseloste</a></li>
-              </ul>
-            </div>
-          </div>
-    <div class="footerrow">
-
-
-
-      <div class="textit">
-        <p class="text-center text-secondary">Jarno Keränen</p>
-        <p class="text-center text-secondary">0405540422 </p>
-        <p class="text-center text-secondary">
+  <footer>
+    <div class="row">
+      <div class="col-12">
+        <ul class="nav">
+          <li class="nav-item"><a routerLink="/etusivu" routerLinkActive="active" class="nav-link darkhover">Etusivu</a></li>
+          <li class="nav-item"><a routerLink="/pricelist" routerLinkActive="active" class="nav-link darkhover">Informaatio</a></li>
+          <li class="nav-item"><a routerLink="/portfolio" routerLinkActive="active" class="nav-link darkhover">Projekteja</a></li>
+          <li class="nav-item"><a routerLink="/tietosuoja" routerLinkActive="active" class="nav-link darkhover">Tietosuojaseloste</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-row">
+      <div class="text-it">
+        <p class="text-center text-muted">Jarno Keränen</p>
+        <p class="text-center text-muted">0405540422</p>
+        <p class="text-center text-muted">
           <a href="mailto:info@koodimaa.fi">info@koodimaa.fi</a>
         </p>
-        <p class="text-center text-secondary">koodimaa.fi</p>
+        <p class="text-center text-muted">koodimaa.fi</p>
       </div>
-
-
-     
     </div>
-    
-    
   </footer>
 </div>
-
-
-

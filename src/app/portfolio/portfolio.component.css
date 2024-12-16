@@ -1,26 +1,52 @@
 .group-listaryhma {
-
-    margin-left: 25%;
-    margin-right: 25%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 
+.filters {
+  background-color: #012543;
+}
 
+select {
+  width: 12rem;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: #000;
+  margin: 1%;
 
+}
 
+.btn-primary {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #012543;
+  color: #fff;
+  cursor: pointer;
+  margin: 1%;
+
+}
+
+.btn-primary:hover {
+  background-color: #fff;
+  color: #012543;
+}
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
-  font-family: "open sans", sans-serif; 
+:root {
+  font-family: "Open Sans", sans-serif;
 }
 
-header{
+header {
   min-height: 80vh;
   background-color: #012543;
   position: relative;
@@ -32,13 +58,12 @@ header{
 .ripple-3,
 .ripple-4,
 .ripple-5 {
-  height: 1px;
-  width: 1px;
+  height: 20px; /* Big pixel size */
+  width: 20px; /* Big pixel size */
   position: absolute;
-  left: 50%; /* This will center the lines */
-  bottom: 50%; /* This will center the lines */
+  left: 50%;
+  bottom: 50%;
   background-color: #fff;
-  border-radius: 50%;
   transform: translate3d(-50%, -50%, 0);
   animation-name: ripple;
   animation-duration: 12s;
@@ -47,59 +72,52 @@ header{
   will-change: transform, opacity;
 }
 
-.ripple-1{
+.ripple-1 {
   animation-delay: 0;
 }
 
-.ripple-2{
+.ripple-2 {
   animation-delay: 11s;
 }
 
-.ripple-3{
+.ripple-3 {
   animation-delay: 21s;
 }
 
-.ripple-4{
+.ripple-4 {
   animation-delay: 31s;
 }
 
-.ripple-4{
+.ripple-5 {
   animation-delay: 41s;
 }
 
-.ripple-5{
-  animation-delay: 51s;
-}
-
-
-
-@keyframes ripple{
-  0%{
+@keyframes ripple {
+  0% {
     transform: translate3d(-50%, 50%, 0) scale(0);
-    opacity: .33;
+    opacity: 1;
   }
-  100%{
-    transform: translate3d(-50%, 50%, 0) scale(5000);
+  100% {
+    transform: translate3d(-50%, 50%, 0) scale(100);
     opacity: 0;
   }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
   .ripple-1,
   .ripple-2,
   .ripple-3,
   .ripple-4,
-  .ripple-5{
+  .ripple-5 {
     display: none;
   }
 
   .group-listaryhma {
-
     margin-left: 5%;
     margin-right: 5%;
-   }
-  
+  }
+
   header {
-      background-color: #2222229a !important;
-    }
+    background-color: #2222229a !important;
+  }
 }

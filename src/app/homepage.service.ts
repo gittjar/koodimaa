@@ -18,10 +18,10 @@ export class HomepageService {
 	  mydataurl = 'api/mydatas';
 
 
-// liitet��n injektori HttpService  - olio t�h�n luokkaan konsuktorin argumenttina (Depency injection)
+// liitetään injektori HttpService  - olio t�h�n luokkaan konsuktorin argumenttina (Depency injection)
   constructor(private http: HttpClient) { }
 
-  // tehd��n pyynt� palvelimelle jolla haetaan tieto observablena
+  // tehdään pyyntö palvelimelle jolla haetaan tieto observablena
   getMydata(): Observable <Mydata[]>
   {
     return this.http.get<Mydata[]>(this.mydataurl);

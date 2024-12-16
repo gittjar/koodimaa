@@ -13,6 +13,9 @@ import { MatMenuModule } from '@angular/material/menu';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +33,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     HttpClientModule,
     MatMenuModule,
     MatIconModule,
+    CommonModule,
+    FormsModule,
 // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
 // and returns simulated server responses.
 // Remove it when a real server is ready to receive requests.
