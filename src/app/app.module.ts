@@ -15,6 +15,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -25,7 +26,6 @@ import { FormsModule } from '@angular/forms';
     PrivacyComponent,
     EtusivuComponent,
     PortfolioComponent,
-    
   ],
   imports: [
     BrowserModule,
@@ -35,13 +35,14 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     CommonModule,
     FormsModule,
-// The HttpClientInMemoryWebApiModule module intercepts HTTP requests
-// and returns simulated server responses.
-// Remove it when a real server is ready to receive requests.
-	HttpClientInMemoryWebApiModule.forRoot(
- 	InMemoryDataService, { dataEncapsulation: false }
-),
-BrowserAnimationsModule
+    MatSnackBarModule,
+    // The HttpClientInMemoryWebApiModule module intercepts HTTP requests
+    // and returns simulated server responses.
+    // Remove it when a real server is ready to receive requests.
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    ),
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
