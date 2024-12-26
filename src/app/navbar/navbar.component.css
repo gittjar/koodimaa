@@ -78,8 +78,6 @@
             margin-bottom: 3%;
             margin-right: 5%;
             order: 2;
-          
-          
         }
    
 
@@ -90,8 +88,11 @@
         }
 
 
+
+
         a {
             font-size: 1.5rem;
             border: 0;
+            color: #2222229a !important;
         }
     }
