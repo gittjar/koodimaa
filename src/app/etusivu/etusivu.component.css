@@ -88,9 +88,20 @@ h5 {
   h5 {
     font-size: 3rem;
   }
+
+  .hero-otsikko {
+    font-size: 5rem;
+  }
+
+  .hero-text {
+    padding: 20px;
+  }
   .carousel-indicators {
     bottom: -10px;
     left: -30%; /* Align the indicators to the left */
+  }
+  .hero-small-text {
+    font-size: 1.1rem;
   }
 }
 
@@ -99,6 +110,18 @@ h5 {
     display: none;
   }
   .hamburgermenu {display: none;}
+
+  .hero-otsikko {
+    font-size: 3rem;
+  }
+
+  .hero-text {
+    padding: 10px;
+  }
+.hero-small-text {
+    display: none;
+  }
+
 
   .carousel-indicators {
     bottom: -10px;
