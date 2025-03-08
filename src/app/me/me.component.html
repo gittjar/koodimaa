@@ -4,64 +4,11 @@
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <div class="col" *ngFor="let item of content">
           <div class="card h-100">
-            <img src="{{item.image}}" class="card-img-top" alt="...">
+            <img *ngIf="item.image" src="{{item.image}}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title text-dark p-2">{{ item.title }}</h5>
-              <p class="card-text bg-dark rounded p-2">{{ item.text }}</p>
+              <p class="card-text bg-dark rounded p-2" [innerHTML]="item.text"></p>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="me-sivu-alaosa">
-    <div class="card text-bg-dark mb-2 kortti">
-      <div class="row g-2">
-        <div class="col-lg-4 col-md-6 col-sm-12">
-          <img src="../../assets/images/omakuva.jpg" class="img-fluid rounded-start" alt="...">
-          <p class="card-text text-muted p-2">Koulutus: Tietojenkäsittely - Tradenomi (Haaga-Helia), Ohjelmointi (Helsingin Liiketalouden Ammattikoulu), Tietojenkäsittely (HLTI)</p>
-        </div>
-        <div class="col-lg-8 col-md-6 col-sm-12">
-          <div class="card-body">
-            <h3 class="card-title">Hinnoittelu</h3>
-            <p class="card-text">
-              Otan vastaan web-pohjaisia ohjelmointiprojekteja, määrittelen tietokantoja ja ohjelmoin rajapintoja. Tarjoan myös ylläpitoa ja jatkokehitystä valmiille sivustoille.
-            </p>
-            <table class="table table-dark">
-              <thead>
-                <tr>
-                  <th>Palvelu</th>
-                  <th>Hinta</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Yksisivuinen verkkosivusto</td>
-                  <td>€100-200 (ALV 0%)</td>
-                </tr>
-                <tr>
-                  <td>Verkkosivusto, jossa enintään 5 sivua</td>
-                  <td>€500-700 (ALV 0%)</td>
-                </tr>
-                <tr>
-                  <td>Laaja verkkosivusto</td>
-                  <td>Hinta sovitaan erikseen</td>
-                </tr>
-                <tr>
-                  <td>Tietokantataulut</td>
-                  <td>€50-100 per taulu (ALV 0%)</td>
-                </tr>
-                <tr>
-                  <td>Valmiin sivuston ylläpito kuukaudessa</td>
-                  <td>€30-70 (ALV 0%)</td>
-                </tr>
-                <tr>
-                  <td>Tuntityöt</td>
-                  <td>€75 (ALV 0%)</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </div>

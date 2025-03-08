@@ -1,4 +1,3 @@
-// content.ts
 export const content = [
     {
       title: 'Edulliset ohjelmointipalvelut? - Ehdottomasti.',
@@ -19,5 +18,38 @@ export const content = [
       title: 'Ylläpito ja jatkokehitys',
       text: `Tarjoan ylläpitoa ja jatkokehitystä valmiille sivustoille, jotta ne pysyvät ajan tasalla ja toimivat moitteettomasti. Ylläpitopalveluihini kuuluu muun muassa tietoturvapäivitykset ja suorituskyvyn optimointi.`,
       image: '../../assets/images/IMG-002.WEBP'
-    } 
+    },
+    {
+      title: 'Koulutus',
+      text: `Viestintä-alan perustutkinto - Ohjelmointi (Helsinki BC 2024) <br> Informaatioteknologia - Tradenomi (Helsinki Haaga-Helia 2009) <br> Merkonomi - Tietojenkäsittely (Hämeenlinna HLTI 1999)`,
+      image: '../../assets/images/omakuva.jpg'
+    },
+    {
+      title: 'Hinnoittelu',
+      text: `
+       
+              Yksisivuinen verkkosivusto - Hinta
+              €100-200 (ALV 0%)
+              <br>
+          
+              Verkkosivusto, jossa enintään 5 sivua - Hinta
+              €500-700 (ALV 0%)
+              <br>
+         Laaja verkkosivusto
+             Hinta sovitaan erikseen
+             <br>
+         
+            Tietokantataulut - Hinta
+             €50-100 per taulu (ALV 0%)
+             <br>
+           
+              Valmiin sivuston ylläpito kuukaudessa - Hinta
+              €30-70 (ALV 0%)
+              <br>
+         Tuntityöt - Hinta
+              €75 (ALV 0%)
+    
+      `,
+      image: '../../assets/images/IMG-002.WEBP'
+    }
   ];

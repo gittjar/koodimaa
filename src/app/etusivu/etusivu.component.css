@@ -3,7 +3,7 @@ body {
 }
 
 .hero-image {
-  background-image: url('../../assets/images/coding_1.jpg');
+  background-image: url('../../assets/images/ROCKET.WEBP');
   height: 50vh; /* Adjust as needed */
   background-position: center;
   background-repeat: no-repeat;
@@ -17,13 +17,22 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
+  padding: 20px; /* Add padding to the hero-text */
+}
 
+.txt-tausta {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 0.5rem; /* Increase margin to separate elements */
 }
 
 .hero-otsikko {
-  color: rgb(118, 250, 246);
-  font-size: 2.5rem;
+  color: white;
+  font-size: 4.5rem;
   font-weight: 800;
+  opacity: 0.8;
 }
 
 .button-projekteja {
@@ -35,14 +44,15 @@ body {
   border: 2px solid rgb(118, 250, 246);
   border-radius: 5px;
   font-size: 2rem;
+  background-color: rgb(4, 4, 4);
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
+
 .button-projekteja:hover {
-  color: rgb(118, 250, 246);
-  background-color: transparent;
+  background-color: rgb(71, 174, 170);
+  opacity: 0.8;
   border: 1px dashed rgb(118, 250, 246);
 }
-
-
 
 h5 {
   font-size: 2.5rem;
@@ -67,8 +77,6 @@ h5 {
 .lead {
   font-size: 1.5rem;
   color: #dad9d9;
-  
- 
 }
 
 @media only screen and (min-width: 426px) {
@@ -84,7 +92,6 @@ h5 {
     bottom: -10px;
     left: -30%; /* Align the indicators to the left */
   }
-
 }
 
 @media only screen and (max-width: 426px) {
@@ -102,9 +109,7 @@ h5 {
     font-size: 1.5rem;
   }
 
-
   h5 {
     font-size: 1.3rem;
   }
-
 }
