@@ -1,31 +1,21 @@
 <main class="me-sivu">
   <section class="me-sivu-keskiosa">
-    <section class="information-field text-bg-dark">
-      <h1>Edulliset ohjelmointipalvelut? - Ehdottomasti.</h1>
-      <div>
-        <figure>
-          <img src="../../assets/images/koodimaa.png" class="navbar-logo">
-        </figure>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col" *ngFor="let item of content">
+          <div class="card h-100">
+            <img src="{{item.image}}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title text-dark p-2">{{ item.title }}</h5>
+              <p class="card-text bg-dark rounded p-2">{{ item.text }}</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <p>
-        Käytän nykyaikaisen web-pohjaisen ohjelmoinnin avainteknologioita: React, Angular, C# ja Node.js. Nämä teknologiat mahdollistavat dynaamisten ja responsiivisten verkkosovellusten kehittämisen, jotka tarjoavat erinomaisen käyttäjäkokemuksen. React ja Angular ovat suosittuja JavaScript-kirjastoja ja -frameworkeja, jotka mahdollistavat tehokkaan ja modulaarisen käyttöliittymän rakentamisen. C# on monipuolinen ohjelmointikieli, joka soveltuu erityisesti palvelinpuolen kehitykseen, kun taas Node.js mahdollistaa JavaScriptin käytön palvelinpuolella, mikä tekee siitä ihanteellisen valinnan reaaliaikaisten sovellusten kehittämiseen.
-      </p>
-      <p>
-        Pääasiassa käytän Azure SQL -tietokantoja, jotka tarjoavat skaalautuvuutta, turvallisuutta ja suorituskykyä pilvipohjaisissa ympäristöissä. Työskentelen myös MySQL:n ja MongoDB:n kanssa, jotka ovat suosittuja vaihtoehtoja relaatiotietokantojen ja NoSQL-tietokantojen tarpeisiin. Azure SQL mahdollistaa saumattoman integraation muiden Microsoftin palveluiden kanssa, kun taas MySQL on tunnettu avoimen lähdekoodin ratkaisuna ja MongoDB tarjoaa joustavuutta dokumenttipohjaisessa tietojen tallennuksessa.
-      </p>
-      <p>
-        Rakennan sivustoja ja web-pohjaisia ohjelmia (WebApp) Reactilla ja Angularilla, jotka tarjoavat modernit ja käyttäjäystävälliset käyttöliittymät. Luon myös web-pohjaisia palveluita, kuten REST API:ita, jotka mahdollistavat eri järjestelmien ja sovellusten välisen tiedonvaihdon. REST API:t ovat keskeinen osa nykyaikaista web-kehitystä, sillä ne tarjoavat standardoidun tavan kommunikoida palvelimien ja asiakkaiden välillä HTTP-protokollan avulla. Tarvittaessa voin myös kehittää verkkokauppa-alustoja, jotka tukevat liiketoimintasi kasvua ja tarjoavat saumattoman ostokokemuksen asiakkaille.
-      </p>
-      <p>
-        Lisäksi tarjoan ylläpitoa ja jatkokehitystä valmiille sivustoille, jotta ne pysyvät ajan tasalla ja toimivat moitteettomasti. Ylläpitopalveluihini kuuluu muun muassa tietoturvapäivitykset, suorituskyvyn optimointi ja uusien ominaisuuksien lisääminen tarpeidesi mukaan. Olen sitoutunut tarjoamaan korkealaatuisia ja kustannustehokkaita ratkaisuja, jotka vastaavat liiketoimintasi tarpeisiin ja auttavat sinua saavuttamaan tavoitteesi.
-      </p>
-      <hr>
-      <p>
-        Suunnitellaan yhdessä tarpeisiisi räätälöity ratkaisu. Autan sinua löytämään kustannustehokkaan ja laadukkaan ratkaisun, jotta et maksa liikaa palveluista tai työstä, joka ei hyödytä sinua! 
-        Keskustellaan avoimesti kustannuksista ja aikatauluista. Vertaa ja löydä sinulle paras ratkaisu!
-      </p>
-    </section>
+    </div>
+  </section>
 
+  <section class="me-sivu-alaosa">
     <div class="card text-bg-dark mb-2 kortti">
       <div class="row g-2">
         <div class="col-lg-4 col-md-6 col-sm-12">
@@ -88,7 +78,5 @@
         </a>
       </button>
     </div>
-
-    
   </div>
 </main>

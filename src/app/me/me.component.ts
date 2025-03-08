@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Mydata } from '../dataclasses';
 import { HomepageService } from '../homepage.service';
+import { content } from './content';
+
 
 @Component({
   selector: 'app-me',
@@ -9,6 +11,7 @@ import { HomepageService } from '../homepage.service';
 })
 export class MeComponent implements OnInit { 
   
+  content = content;
   mydatas: Mydata[] = [];
   constructor(private hpservice: HomepageService) { }
   
