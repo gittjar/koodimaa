@@ -5,8 +5,8 @@ export const content = [
       image: '../../assets/images/IMG-005.WEBP'
     },
     {
-      title: 'Tietokannat ja palvelut',
-      text: `Pääasiassa käytän Azure SQL -tietokantoja, jotka tarjoavat skaalautuvuutta, turvallisuutta ja suorituskykyä pilvipohjaisissa ympäristöissä. Työskentelen myös MySQL:n ja MongoDB:n kanssa.`,
+      title: 'Tietokantaohjelmointi',
+      text: `Pääasiassa käytän Azure SQL -tietokantoja, jotka tarjoavat skaalautuvuutta, turvallisuutta ja suorituskykyä pilvipohjaisissa ympäristöissä. Käytän myös muita tietokantoja, kuten MySQL ja MongoDB. Kerro tarpeesi, niin etsitään yhdessä sopiva ratkaisu.`,
       image: '../../assets/images/IMG-004.WEBP'
     },
     {

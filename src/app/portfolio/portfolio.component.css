@@ -1,10 +1,37 @@
 .group-listaryhma {
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .filters {
-  background-color: #012543;
+  background-color: #2222229a;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.linkki {
+  color: #444444;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
 }
 
 select {
@@ -15,7 +42,6 @@ select {
   margin-bottom: 10px;
   color: #000;
   margin: 1%;
-
 }
 
 .btn-primary {
@@ -26,7 +52,6 @@ select {
   color: #fff;
   cursor: pointer;
   margin: 1%;
-
 }
 
 .btn-primary:hover {
@@ -48,70 +73,12 @@ select {
 
 header {
   min-height: 80vh;
-  background-color: #012543;
+  background-color: #2222229a;
   position: relative;
   overflow: hidden;
 }
 
-.ripple-1,
-.ripple-2,
-.ripple-3,
-.ripple-4,
-.ripple-5 {
-  height: 20px; /* Big pixel size */
-  width: 20px; /* Big pixel size */
-  position: absolute;
-  left: 50%;
-  bottom: 50%;
-  background-color: #fff;
-  transform: translate3d(-50%, -50%, 0);
-  animation-name: ripple;
-  animation-duration: 12s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-out;
-  will-change: transform, opacity;
-}
-
-.ripple-1 {
-  animation-delay: 0;
-}
-
-.ripple-2 {
-  animation-delay: 11s;
-}
-
-.ripple-3 {
-  animation-delay: 21s;
-}
-
-.ripple-4 {
-  animation-delay: 31s;
-}
-
-.ripple-5 {
-  animation-delay: 41s;
-}
-
-@keyframes ripple {
-  0% {
-    transform: translate3d(-50%, 50%, 0) scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: translate3d(-50%, 50%, 0) scale(100);
-    opacity: 0;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .ripple-1,
-  .ripple-2,
-  .ripple-3,
-  .ripple-4,
-  .ripple-5 {
-    display: none;
-  }
-
   .group-listaryhma {
     margin-left: 5%;
     margin-right: 5%;
