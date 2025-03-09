@@ -1,10 +1,19 @@
 .group-listaryhma {
-  margin-left: 20%;
-  margin-right: 20%;
+ 
 }
 
+.portfolio-sivu {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border: #444 1px solid;
+  border-radius: 10px;
+}
+
+
 .filters {
-  background-color: #2222229a;
+  background-color: transparent;
 }
 
 .card {
@@ -37,7 +46,7 @@
 select {
   width: 12rem;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #cbd335;
   border-radius: 5px;
   margin-bottom: 10px;
   color: #000;
@@ -48,15 +57,16 @@ select {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: #012543;
+  background-color: #2734ee;
   color: #fff;
   cursor: pointer;
   margin: 1%;
 }
 
 .btn-primary:hover {
-  background-color: #fff;
-  color: #012543;
+  background-color: #212dd5;
+  border: #000 1px solid;
+  color: white;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
