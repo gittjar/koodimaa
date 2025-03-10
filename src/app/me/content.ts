@@ -50,6 +50,6 @@ export const content = [
               €75 (ALV 0%)
     
       `,
-      image: '../../assets/images/IMG-002.WEBP'
+      image: '../../assets/images/IMG-001.WEBP'
     }
   ];
