@@ -1,46 +1,107 @@
 <header>
   <main class="portfolio-sivu">
-  <section class="group-listaryhma">
-    <article class="list-group listaryhma-1 mt-2 mb-2">
-      <div class="list-group">
-        <div class="list-group-item rounded" aria-current="true">
-          <div class="d-flex w-100 justify-content-between">
-            <h1 class="mb-1 m-1">Ohjelmointiprojekteja</h1>
-            <small class="m-2">9.3.2025</small>
-          </div>
-          <p class="m-1">Angularilla, Reactilla ja C# tekemiäni web -ohjelmia.</p>
-          <div class="filters">
-            <select [(ngModel)]="selectedLanguage" (change)="onLanguageChange($event)">
-              <option value="" selected>All</option>
-              <option value="Angular">Angular</option>
-              <option value="React">React</option>
-              <option value="C#">C#</option>
-            </select>
-            <button class="btn-primary" type="button" (click)="sortPrograms('new')">Uusin päivitys</button>
-            <button class="btn-primary" type="button" (click)="sortPrograms('old')">Vanhin päivitys</button>
-          </div>
-        </div>
+    <!-- Page Header -->
+    <section class="portfolio-header animate-fade-in">
+      <h1 class="portfolio-title">
+        <i class="bi bi-briefcase-fill title-icon"></i>
+        Projektit
+      </h1>
+      <div class="title-underline"></div>
+      <p class="portfolio-subtitle">Katso tekemiäni moderneja web-sovelluksia</p>
+    </section>
 
-        <div class="row">
-          <div class="col-md-4 mb-2 p-2" *ngFor="let x of filteredPrograms">
-            <div class="card h-100">
-              <a [href]="x.url" target="_blank">
-                <img [src]="x.image" class="card-img-top" alt="{{x.name}}">
-              </a>
-              <div class="card-body">
-                <h5 class="card-title text-dark"><a class="linkki" href="{{x.url}}">{{x.name}} <i class="bi bi-arrow-right"></i></a></h5>
-                <p class="card-text bg-dark p-2 rounded mx-2">{{x.detail}}</p>
+    <section class="group-listaryhma">
+      <article class="list-group listaryhma-1 mt-2 mb-2">
+        <div class="list-group">
+          <div class="list-group-item rounded filter-container" aria-current="true">
+            <div class="d-flex w-100 justify-content-between flex-wrap">
+              <h2 class="mb-1 m-1 section-title">
+                <i class="bi bi-code-slash"></i>
+                Ohjelmointiprojekteja
+              </h2>
+              <small class="m-2 date-badge">
+                <i class="bi bi-calendar-event"></i>
+                9.3.2025
+              </small>
+            </div>
+            <p class="m-1 description">Angularilla, Reactilla ja C# tekemiäni web-ohjelmia.</p>
+            
+            <!-- Filters -->
+            <div class="filters">
+              <div class="filter-group">
+                <label for="language-select" class="filter-label">
+                  <i class="bi bi-funnel-fill"></i>
+                  Suodata:
+                </label>
+                <select id="language-select" [(ngModel)]="selectedLanguage" (change)="onLanguageChange($event)" class="custom-select">
+                  <option value="" selected>Kaikki teknologiat</option>
+                  <option value="Angular">Angular</option>
+                  <option value="React">React</option>
+                  <option value="C#">C#</option>
+                </select>
               </div>
-              <div class="card-footer p-2">
-                <small class="text-muted mx-2">Updated: {{x.update}}</small>
-                <span class="badge text-bg-success mx-1 p-2" *ngIf="x.status === 'valmis'">{{x.status}}</span>
-                <span class="badge text-bg-warning mx-1 p-2" *ngIf="x.status === 'kesken'">{{x.status}}</span>
+              
+              <div class="filter-buttons">
+                <button class="btn-filter btn-primary" type="button" (click)="sortPrograms('new')">
+                  <i class="bi bi-sort-down"></i>
+                  Uusin päivitys
+                </button>
+                <button class="btn-filter btn-primary" type="button" (click)="sortPrograms('old')">
+                  <i class="bi bi-sort-up"></i>
+                  Vanhin päivitys
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Cards Grid -->
+          <div class="row projects-grid">
+            <div class="col-md-4 mb-4 p-2" *ngFor="let x of filteredPrograms; let i = index">
+              <div class="card h-100 project-card" [style.animation-delay]="(i * 0.1) + 's'">
+                <div class="card-image-container">
+                  <a [href]="x.url" target="_blank" class="image-link">
+                    <img [src]="x.image" class="card-img-top" alt="{{x.name}}">
+                    <div class="image-overlay">
+                      <i class="bi bi-box-arrow-up-right overlay-icon"></i>
+                      <span class="overlay-text">Avaa projekti</span>
+                    </div>
+                  </a>
+                </div>
+                
+                <div class="card-body">
+                  <h5 class="card-title text-dark">
+                    <a class="linkki" [href]="x.url" target="_blank">
+                      {{x.name}} 
+                      <i class="bi bi-arrow-right arrow-icon"></i>
+                    </a>
+                  </h5>
+                  <div class="card-divider"></div>
+                  <p class="card-text">{{x.detail}}</p>
+                </div>
+                
+                <div class="card-footer">
+                  <div class="footer-content">
+                    <small class="text-muted">
+                      <i class="bi bi-clock-fill"></i>
+                      {{x.update}}
+                    </small>
+                    <span class="badge badge-success" *ngIf="x.status === 'valmis'">
+                      <i class="bi bi-check-circle-fill"></i>
+                      {{x.status}}
+                    </span>
+                    <span class="badge badge-warning" *ngIf="x.status === 'kesken'">
+                      <i class="bi bi-hourglass-split"></i>
+                      {{x.status}}
+                    </span>
+                  </div>
+                </div>
+                
+                <div class="card-shine"></div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </article>
-  </section>
-</main>
+      </article>
+    </section>
+  </main>
 </header>

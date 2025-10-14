@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
  // title = 'pääotsikko jos asettaa';
   extrainfo = 'Footer here! 2023';
+  currentYear = new Date().getFullYear();
 }

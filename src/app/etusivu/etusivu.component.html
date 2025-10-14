@@ -1,41 +1,96 @@
-<!-- Hero Image -->
-<!-- Hero Image -->
+<!-- Hero Section with Parallax Effect -->
 <section class="hero-image">
-  <div class="hero-text">
-    <h1 class="hero-otsikko"><span class="txt-tausta">Ohjelmointipalvelut</span></h1>
+  <div class="hero-overlay"></div>
+  <div class="hero-particles"></div>
+  <div class="hero-text animate-fade-in">
+    <h1 class="hero-otsikko">
+      <span class="txt-tausta glitch" data-text="Ohjelmointipalvelut">Ohjelmointipalvelut</span>
+    </h1>
     <br>
     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <section class="txt-tausta mb-4 hero-small-text">Web-pohjainen ohjelmointi</section>
+          <section class="txt-tausta mb-4 hero-small-text slide-in">Web-pohjainen ohjelmointi</section>
         </div>
         <div class="carousel-item">
-          <section class="txt-tausta mb-4 hero-small-text">Tietokannat</section>
+          <section class="txt-tausta mb-4 hero-small-text slide-in">Tietokannat</section>
         </div>
         <div class="carousel-item">
-          <section class="txt-tausta mb-4 hero-small-text">Full Stack koodaus</section>
+          <section class="txt-tausta mb-4 hero-small-text slide-in">Full Stack koodaus</section>
         </div>
         <div class="carousel-item">
-          <section class="txt-tausta mb-4 hero-small-text">Erilaiset kotisivut</section>
+          <section class="txt-tausta mb-4 hero-small-text slide-in">Erilaiset kotisivut</section>
         </div>
       </div>
     </div>
-    <a routerLink="/portfolio" class="button-projekteja">Katso projekteja <i class="bi bi-chevron-right"></i></a>
+    <a routerLink="/portfolio" class="button-projekteja pulse-button">
+      Katso projekteja <i class="bi bi-chevron-right"></i>
+    </a>
   </div>
 </section>
 
-
-<!-- Page Content -->
-<section class="py-3 p-4">
+<!-- Features Section with Animated Cards -->
+<section class="features-section py-5">
   <div class="container">
-    <h1 class="fw-light">Webpohjainen palvelumuotoilu? Nykyaikaiset verkkosivut? Jos vastasit kyllä, olet oikeassa paikassa.</h1>
-    <p class="lead">Etsitkö sopivaa kumppania ohjelmointiprojektiin? Ota yhteyttä! Teen ohjelmointitöitä pääasiassa webpohjaisesti. Suunnitellaan yhdessä juuri sinulle sopiva kokonaisuus. Hoidan tarvittaessa myös toteutetun sivuston jatkokehitystä ja ylläpitoa.
-    </p>
-    <p class="lead">
-      Esitän asiat ymmärrettävästi ja selkeästi, vahvuuteni on asiakaslähtöinen ohjelmointi. Kuuntelen asiakkaan toiveita ja tarpeita, ja pyrin toteuttamaan ne mahdollisimman hyvin.
-      
-    
-      Katso <a routerLink="/portfolio">projekteista<i class="bi bi-arrow-right"></i> </a> tekemiäni ohjelmointitöitä!
-    </p>
+    <div class="row text-center mb-5">
+      <div class="col-12">
+        <h2 class="section-title animate-on-scroll">Miksi valita meidät?</h2>
+        <div class="title-underline"></div>
+      </div>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="feature-card animate-on-scroll" style="animation-delay: 0.1s">
+          <div class="feature-icon">
+            <i class="bi bi-lightning-charge-fill"></i>
+          </div>
+          <h3>Nopea toteutus</h3>
+          <p>Projekti käyntiin nopeasti ja tehokkaasti ilman turhaa byrokratiaa</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card animate-on-scroll" style="animation-delay: 0.2s">
+          <div class="feature-icon">
+            <i class="bi bi-heart-fill"></i>
+          </div>
+          <h3>Asiakaslähtöisyys</h3>
+          <p>Kuuntelemme tarpeesi ja toteutamme juuri sinulle sopivan ratkaisun</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card animate-on-scroll" style="animation-delay: 0.3s">
+          <div class="feature-icon">
+            <i class="bi bi-trophy-fill"></i>
+          </div>
+          <h3>Laadukas koodi</h3>
+          <p>Nykyaikaiset teknologiat ja parhaat käytännöt takaa laadun</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Page Content with Gradient Background -->
+<section class="content-section py-5">
+  <div class="container">
+    <div class="content-box animate-on-scroll">
+      <h1 class="fw-light gradient-text">Webpohjainen palvelumuotoilu? Nykyaikaiset verkkosivut? Jos vastasit kyllä, olet oikeassa paikassa.</h1>
+      <p class="lead">
+        <i class="bi bi-check-circle-fill text-success me-2"></i>
+        Etsitkö sopivaa kumppania ohjelmointiprojektiin? Ota yhteyttä! Teen ohjelmointitöitä pääasiassa webpohjaisesti. 
+        Suunnitellaan yhdessä juuri sinulle sopiva kokonaisuus. Hoidan tarvittaessa myös toteutetun sivuston jatkokehitystä ja ylläpitoa.
+      </p>
+      <p class="lead">
+        <i class="bi bi-star-fill text-warning me-2"></i>
+        Esitän asiat ymmärrettävästi ja selkeästi, vahvuuteni on asiakaslähtöinen ohjelmointi. 
+        Kuuntelen asiakkaan toiveita ja tarpeita, ja pyrin toteuttamaan ne mahdollisimman hyvin.
+      </p>
+      <div class="cta-box mt-4">
+        <p class="lead mb-0">
+          <i class="bi bi-rocket-takeoff-fill me-2"></i>
+          Katso <a routerLink="/portfolio" class="portfolio-link">projekteista <i class="bi bi-arrow-right"></i></a> tekemiäni ohjelmointitöitä!
+        </p>
+      </div>
+    </div>
   </div>
 </section>

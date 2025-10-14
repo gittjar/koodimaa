@@ -1,44 +1,61 @@
 
+
 <nav class="navbar navbar-inverse kokosivumenu">
+  <div class="navbar-container">
+    <!-- Logo/Brand -->
+    <div class="navbar-brand">
+      <a routerLink="/etusivu" class="brand-link">
+        <span class="brand-text">Koodimaa</span>
+        <span class="brand-dot">.</span>
+      </a>
+    </div>
 
-  
+    <!-- Mobile Menu Button -->
     <button mat-icon-button [matMenuTriggerFor]="menu" class="hamburgermenu">
-      
       <i class="bi bi-list"></i>
-      </button>
-      <mat-menu #menu="matMenu" >
-       
-        <button mat-menu-item >
-          <mat-icon>home</mat-icon>
-          <span><a routerLink="/etusivu">Etusivu <i class="bi bi-arrow-right"></i></a></span>
-        </button>
-        <hr>
-
-        <button mat-menu-item>
-            <mat-icon>face</mat-icon>
-            <span><a routerLink="/pricelist">Informaatio <i class="bi bi-arrow-right"></i></a></span>
-          </button>
-          <hr>
-
-        <button mat-menu-item>
-          <mat-icon>computer</mat-icon>
-          <span><a routerLink="/portfolio">Projekteja <i class="bi bi-arrow-right"></i></a></span>
-        </button>
-
-       
-      </mat-menu>
-
-
-
-    <ul class="nav navbar-nav material-symbols-outlined">
-        <li><a routerLink="/etusivu">Etusivu <i class="bi bi-arrow-right"></i></a></li>
-        <li><a routerLink="/pricelist">Informaatio <i class="bi bi-arrow-right"></i></a></li>
-        <li><a routerLink="/portfolio">Projekteja <i class="bi bi-arrow-right"></i></a> </li>
-    </ul>
- 
-    <p class="navbar-text"></p>
+    </button>
     
+    <mat-menu #menu="matMenu" class="mobile-menu">
+      <button mat-menu-item>
+        <mat-icon>home</mat-icon>
+        <span><a routerLink="/etusivu">Etusivu <i class="bi bi-arrow-right"></i></a></span>
+      </button>
+      <hr>
 
+      <button mat-menu-item>
+        <mat-icon>face</mat-icon>
+        <span><a routerLink="/pricelist">Informaatio <i class="bi bi-arrow-right"></i></a></span>
+      </button>
+      <hr>
+
+      <button mat-menu-item>
+        <mat-icon>computer</mat-icon>
+        <span><a routerLink="/portfolio">Projekteja <i class="bi bi-arrow-right"></i></a></span>
+      </button>
+    </mat-menu>
+
+    <!-- Desktop Menu -->
+    <ul class="nav navbar-nav material-symbols-outlined">
+      <li class="nav-item">
+        <a routerLink="/etusivu" routerLinkActive="active-link" class="nav-link">
+          <i class="bi bi-house-door-fill"></i>
+          <span>Etusivu</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/pricelist" routerLinkActive="active-link" class="nav-link">
+          <i class="bi bi-info-circle-fill"></i>
+          <span>Informaatio</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a routerLink="/portfolio" routerLinkActive="active-link" class="nav-link">
+          <i class="bi bi-briefcase-fill"></i>
+          <span>Projekteja</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 </nav>
 
 

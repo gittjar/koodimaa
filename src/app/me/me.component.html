@@ -1,29 +1,59 @@
 <main class="me-sivu">
+  <!-- Page Header -->
+  <section class="page-header animate-fade-in">
+    <h1 class="page-title">
+      <span class="title-icon"><i class="bi bi-person-circle"></i></span>
+      Informaatio
+    </h1>
+    <div class="title-underline"></div>
+  </section>
+
   <section class="me-sivu-keskiosa">
     <div class="container">
       <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col" *ngFor="let item of content">
-          <div class="card h-100">
-            <img *ngIf="item.image" src="{{item.image}}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title text-dark p-2">{{ item.title }}</h5>
-              <p class="card-text bg-dark rounded p-2" [innerHTML]="item.text"></p>
+        <div class="col" *ngFor="let item of content; let i = index">
+          <div class="card h-100 hover-card" [class.animate-slide-left]="i % 2 === 0" [class.animate-slide-right]="i % 2 !== 0">
+            <div class="card-image-wrapper">
+              <img *ngIf="item.image" [src]="item.image" class="card-img-top" alt="{{item.title}}">
+              <div class="image-overlay">
+                <i class="bi bi-zoom-in overlay-icon"></i>
+              </div>
             </div>
+            <div class="card-body">
+              <h5 class="card-title">
+                <i class="bi bi-star-fill title-icon"></i>
+                {{ item.title }}
+              </h5>
+              <div class="card-divider"></div>
+              <p class="card-text" [innerHTML]="item.text"></p>
+            </div>
+            <div class="card-shine"></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="contact-form-container">
+  <!-- Contact Section -->
+  <div class="contact-form-container animate-fade-in-up">
     <div class="container">
-      <button class="send-button">
-        <a href="mailto:info@koodimaa.fi">
-          <span class="send-link">
-            Ota yhteyttä <i class="bi bi-send"></i>
-          </span>
-        </a>
-      </button>
+      <div class="contact-box">
+        <div class="contact-header">
+          <h2 class="contact-title">
+            <i class="bi bi-envelope-heart-fill"></i>
+            Valmis aloittamaan?
+          </h2>
+          <p class="contact-subtitle">Ota yhteyttä ja keskustellaan projektistasi!</p>
+        </div>
+        <button class="send-button">
+          <a href="mailto:info@koodimaa.fi">
+            <span class="send-link">
+              <span class="button-text">Ota yhteyttä</span>
+              <i class="bi bi-send-fill button-icon"></i>
+            </span>
+          </a>
+        </button>
+      </div>
     </div>
   </div>
 </main>

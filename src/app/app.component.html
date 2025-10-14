@@ -2,28 +2,96 @@
 <app-navbar></app-navbar>
 <router-outlet></router-outlet>
 
-<!-- Footer -->
-<div class="container">
-  <footer>
-    <div class="row">
-      <div class="col-12">
-        <ul class="nav">
-          <li class="nav-item"><a routerLink="/etusivu" routerLinkActive="active" class="nav-link darkhover">Etusivu</a></li>
-          <li class="nav-item"><a routerLink="/pricelist" routerLinkActive="active" class="nav-link darkhover">Informaatio</a></li>
-          <li class="nav-item"><a routerLink="/portfolio" routerLinkActive="active" class="nav-link darkhover">Projekteja</a></li>
-          <li class="nav-item"><a routerLink="/tietosuoja" routerLinkActive="active" class="nav-link darkhover">Tietosuojaseloste</a></li>
+<!-- Modern Footer -->
+<footer class="modern-footer">
+  <div class="footer-container">
+    <div class="footer-content">
+      <!-- Company Info -->
+      <div class="footer-section">
+        <h3 class="footer-brand">
+          <i class="bi bi-code-slash"></i>
+          Koodimaa<span class="brand-dot">.</span>
+        </h3>
+        <p class="footer-tagline">Rakennamme tulevaisuuden web-sovelluksia</p>
+        <div class="social-links">
+          <a href="mailto:info@koodimaa.fi" class="social-icon" title="Email">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-section">
+        <h4 class="footer-title">Pikavalikko</h4>
+        <ul class="footer-nav">
+          <li>
+            <a routerLink="/etusivu" routerLinkActive="active" class="footer-link">
+              <i class="bi bi-chevron-right"></i>
+              Etusivu
+            </a>
+          </li>
+          <li>
+            <a routerLink="/pricelist" routerLinkActive="active" class="footer-link">
+              <i class="bi bi-chevron-right"></i>
+              Informaatio
+            </a>
+          </li>
+          <li>
+            <a routerLink="/portfolio" routerLinkActive="active" class="footer-link">
+              <i class="bi bi-chevron-right"></i>
+              Projekteja
+            </a>
+          </li>
+          <li>
+            <a routerLink="/tietosuoja" routerLinkActive="active" class="footer-link">
+              <i class="bi bi-chevron-right"></i>
+              Tietosuojaseloste
+            </a>
+          </li>
         </ul>
       </div>
-    </div>
-    <div class="footer-row">
-      <div class="text-it">
-        <p class="text-center text-muted">Jarno Keränen</p>
-        <p class="text-center text-muted">0405540422</p>
-        <p class="text-center text-muted">
-          <a href="mailto:info@koodimaa.fi">info@koodimaa.fi</a>
-        </p>
-        <p class="text-center text-muted">koodimaa.fi</p>
+
+      <!-- Contact Info -->
+      <div class="footer-section">
+        <h4 class="footer-title">Yhteystiedot</h4>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="bi bi-person-fill"></i>
+            <span>Jarno Keränen</span>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-telephone-fill"></i>
+            <a href="tel:0405540422">0405540422</a>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:info@koodimaa.fi">info@koodimaa.fi</a>
+          </div>
+          <div class="contact-item">
+            <i class="bi bi-globe"></i>
+            <span>koodimaa.fi</span>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
-</div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="footer-divider"></div>
+      <p class="copyright">
+        <i class="bi bi-c-circle"></i>
+        {{ currentYear }} Koodimaa. Kaikki oikeudet pidätetään.
+      </p>
+      <p class="made-with">
+        Tehty <i class="bi bi-heart-fill heart-icon"></i> käyttäen Angular
+      </p>
+    </div>
+  </div>
+
+  <!-- Animated Background -->
+  <div class="footer-background">
+    <div class="footer-circle circle-1"></div>
+    <div class="footer-circle circle-2"></div>
+    <div class="footer-circle circle-3"></div>
+  </div>
+</footer>

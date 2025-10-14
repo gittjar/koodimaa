@@ -1,8 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    background-color: #222222;
-    color: rgba(250, 254, 252, 0.959);}
+  background: linear-gradient(180deg, #0a0a0a 0%, #1a1a2e 50%, #0a0a0a 100%);
+  background-attachment: fixed;
+  color: rgba(250, 254, 252, 0.959);
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
 
+html, body { 
+  height: 100%; 
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+  margin: 0; 
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgb(118, 250, 246), rgb(71, 174, 170));
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgb(91, 221, 217), rgb(118, 250, 246));
+}
+
+/* Selection Color */
+::selection {
+  background: rgba(118, 250, 246, 0.3);
+  color: white;
+}
+
+::-moz-selection {
+  background: rgba(118, 250, 246, 0.3);
+  color: white;
+}
+
+/* Utility Classes */
+.text-gradient {
+  background: linear-gradient(135deg, rgb(118, 250, 246), rgb(160, 200, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animation for elements entering viewport */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}

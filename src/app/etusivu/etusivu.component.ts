@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit, HostListener } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 declare var $: any;
 
@@ -29,6 +29,28 @@ export class EtusivuComponent implements OnInit, AfterViewInit {
     $('#carouselExampleCaptions').carousel({
       interval: 5000,
       ride: true
+    });
+    
+    // Initial check for elements in viewport
+    this.checkScroll();
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.checkScroll();
+  }
+
+  private checkScroll() {
+    const elements = document.querySelectorAll('.animate-on-scroll');
+    const windowHeight = window.innerHeight;
+
+    elements.forEach((element) => {
+      const elementTop = element.getBoundingClientRect().top;
+      const elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        element.classList.add('show');
+      }
     });
   }
 }
