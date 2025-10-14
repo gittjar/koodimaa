@@ -65,6 +65,29 @@ body {
   background-clip: text;
 }
 
+/* Material Icon Override */
+.mat-icon,
+::ng-deep .mat-icon {
+  color: rgb(118, 250, 246) !important;
+  overflow: visible !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.mat-icon svg,
+.mat-icon::before {
+  display: block !important;
+}
+
+/* Material Menu Items - Icon Fix */
+.mat-mdc-menu-item .mat-icon {
+  overflow: visible !important;
+  width: 24px !important;
+  height: 24px !important;
+  font-size: 24px !important;
+}
+
 /* Animation for elements entering viewport */
 .animate-on-scroll {
   opacity: 0;
@@ -75,4 +98,110 @@ body {
 .animate-on-scroll.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Font Awesome Icon Fix for Menu */
+.fa {
+  display: inline-block !important;
+  font-family: FontAwesome !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  line-height: inherit !important;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  vertical-align: middle !important;
+}
+
+/* Force Full Icon Display */
+.menu-icon-wrapper .fa,
+.mat-mdc-menu-item .fa {
+  overflow: visible !important;
+  width: auto !important;
+  height: auto !important;
+  vertical-align: middle !important;
+  line-height: inherit !important;
+}
+
+/* Ensure menu items don't clip content */
+.mat-mdc-menu-item,
+.mat-mdc-menu-item *,
+.mat-mdc-menu-item .mdc-list-item__primary-text,
+.mat-mdc-menu-item .mdc-list-item__content {
+  overflow: visible !important;
+}
+
+/* Force all Material menu internal elements visible */
+::ng-deep .mat-mdc-menu-item,
+::ng-deep .mat-mdc-menu-item *,
+::ng-deep .mdc-list-item,
+::ng-deep .mdc-list-item * {
+  overflow: visible !important;
+}
+
+/* Material Menu Global Overrides */
+.mat-mdc-menu-panel {
+  background: linear-gradient(135deg, rgba(15, 15, 30, 0.98), rgba(8, 8, 20, 0.98)) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(118, 250, 246, 0.25) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8), 0 0 40px rgba(118, 250, 246, 0.15) !important;
+}
+
+.mat-mdc-menu-content {
+  background: transparent !important;
+  padding: 8px 0 !important;
+}
+
+.mat-mdc-menu-item {
+  color: white !important;
+  background: transparent !important;
+}
+
+.mat-mdc-menu-item:hover {
+  background: linear-gradient(90deg, rgba(118, 250, 246, 0.15), rgba(71, 174, 170, 0.1)) !important;
+}
+
+.mat-mdc-menu-item .mdc-list-item__primary-text {
+  color: white !important;
+}
+
+.cdk-overlay-pane {
+  margin-top: 8px;
+}
+
+/* Additional Material Menu Overrides */
+.mdc-menu-surface {
+  background-color: transparent !important;
+}
+
+.mdc-list {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.mdc-list-item {
+  background-color: transparent !important;
+}
+
+.mdc-list-item__primary-text {
+  color: white !important;
+}
+
+/* Force Material Menu Colors */
+.mat-menu-panel,
+.mat-mdc-menu-panel.mat-mdc-menu-panel {
+  background: linear-gradient(135deg, rgba(15, 15, 30, 0.98), rgba(8, 8, 20, 0.98)) !important;
+}
+
+body .mat-mdc-menu-panel {
+  background: linear-gradient(135deg, rgba(15, 15, 30, 0.98), rgba(8, 8, 20, 0.98)) !important;
+}
+
+/* Overlay backdrop */
+.cdk-overlay-dark-backdrop {
+  background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.cdk-overlay-backdrop.cdk-overlay-backdrop-showing {
+  opacity: 1 !important;
 }

@@ -1,0 +1,66 @@
+// Custom Dark Material Theme for Koodimaa
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// Define custom dark palette
+$custom-dark-primary: mat.define-palette(mat.$cyan-palette, 400);
+$custom-dark-accent: mat.define-palette(mat.$teal-palette, 300);
+$custom-dark-warn: mat.define-palette(mat.$red-palette);
+
+// Create dark theme
+$custom-dark-theme: mat.define-dark-theme((
+  color: (
+    primary: $custom-dark-primary,
+    accent: $custom-dark-accent,
+    warn: $custom-dark-warn,
+  )
+));
+
+// Apply the dark theme
+@include mat.all-component-themes($custom-dark-theme);
+
+// Custom Menu Overrides
+.mat-mdc-menu-panel {
+  background: linear-gradient(135deg, rgba(15, 15, 30, 0.98), rgba(8, 8, 20, 0.98)) !important;
+  backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(118, 250, 246, 0.25) !important;
+  border-radius: 20px !important;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8), 0 0 40px rgba(118, 250, 246, 0.15) !important;
+}
+
+.mat-mdc-menu-content {
+  background: transparent !important;
+  padding: 0 !important;
+}
+
+.mat-mdc-menu-item {
+  color: white !important;
+  background: transparent !important;
+}
+
+.mat-mdc-menu-item:hover {
+  background: linear-gradient(90deg, rgba(118, 250, 246, 0.08), transparent) !important;
+}
+
+.mat-mdc-menu-item .mdc-list-item__primary-text {
+  color: white !important;
+}
+
+// Menu Material Design Components
+.mdc-menu-surface {
+  background-color: transparent !important;
+}
+
+.mdc-list {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.mdc-list-item {
+  background-color: transparent !important;
+}
+
+.mdc-list-item__primary-text {
+  color: white !important;
+}

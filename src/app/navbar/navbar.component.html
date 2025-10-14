@@ -10,29 +10,70 @@
       </a>
     </div>
 
-    <!-- Mobile Menu Button -->
-    <button mat-icon-button [matMenuTriggerFor]="menu" class="hamburgermenu">
-      <i class="bi bi-list"></i>
-    </button>
-    
-    <mat-menu #menu="matMenu" class="mobile-menu">
-      <button mat-menu-item>
-        <mat-icon>home</mat-icon>
-        <span><a routerLink="/etusivu">Etusivu <i class="bi bi-arrow-right"></i></a></span>
+    <!-- Mobile Menu Button (Bootstrap Dropdown) -->
+    <div class="dropdown hamburgermenu-wrapper">
+      <button class="hamburgermenu" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <span class="hamburger-icon">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </span>
       </button>
-      <hr>
+      
+      <div class="dropdown-menu dropdown-menu-right mobile-menu">
+        <div class="menu-header">
+          <h3 class="menu-header-title">Valikko</h3>
+          <div class="menu-header-line"></div>
+        </div>
+        
+        <a routerLink="/etusivu" class="dropdown-item custom-menu-item">
+          <div class="menu-item-content">
+            <div class="menu-icon-wrapper">
+              <i class="fa fa-home menu-icon"></i>
+            </div>
+            <div class="menu-text-wrapper">
+              <span class="menu-title">Etusivu</span>
+              <span class="menu-subtitle">Tervetuloa sivuille</span>
+            </div>
+            <i class="fa fa-chevron-right arrow-icon"></i>
+          </div>
+        </a>
 
-      <button mat-menu-item>
-        <mat-icon>face</mat-icon>
-        <span><a routerLink="/pricelist">Informaatio <i class="bi bi-arrow-right"></i></a></span>
-      </button>
-      <hr>
+        <a routerLink="/pricelist" class="dropdown-item custom-menu-item">
+          <div class="menu-item-content">
+            <div class="menu-icon-wrapper">
+              <i class="fa fa-info-circle menu-icon"></i>
+            </div>
+            <div class="menu-text-wrapper">
+              <span class="menu-title">Informaatio</span>
+              <span class="menu-subtitle">Palvelut ja hinnat</span>
+            </div>
+            <i class="fa fa-chevron-right arrow-icon"></i>
+          </div>
+        </a>
 
-      <button mat-menu-item>
-        <mat-icon>computer</mat-icon>
-        <span><a routerLink="/portfolio">Projekteja <i class="bi bi-arrow-right"></i></a></span>
-      </button>
-    </mat-menu>
+        <a routerLink="/portfolio" class="dropdown-item custom-menu-item">
+          <div class="menu-item-content">
+            <div class="menu-icon-wrapper">
+              <i class="fa fa-briefcase menu-icon"></i>
+            </div>
+            <div class="menu-text-wrapper">
+              <span class="menu-title">Projekteja</span>
+              <span class="menu-subtitle">Katso tehdyt työt</span>
+            </div>
+            <i class="fa fa-chevron-right arrow-icon"></i>
+          </div>
+        </a>
+
+        <div class="menu-footer">
+          <div class="menu-footer-line"></div>
+          <div class="menu-contact">
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:info@koodimaa.fi" class="contact-link">info@koodimaa.fi</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Desktop Menu -->
     <ul class="nav navbar-nav material-symbols-outlined">
@@ -57,5 +98,4 @@
     </ul>
   </div>
 </nav>
-
 

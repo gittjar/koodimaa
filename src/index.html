@@ -21,6 +21,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    /* Force Material Menu Dark Background */
+    .mat-mdc-menu-panel,
+    .mat-menu-panel {
+      background: linear-gradient(135deg, rgba(15, 15, 30, 0.98), rgba(8, 8, 20, 0.98)) !important;
+    }
+    .mat-mdc-menu-content,
+    .mdc-menu-surface,
+    .mdc-list {
+      background: transparent !important;
+    }
+    .mat-mdc-menu-item {
+      color: white !important;
+      background: transparent !important;
+    }
+  </style>
 </head>
 <body class="mat-typography">
   <app-root></app-root>
