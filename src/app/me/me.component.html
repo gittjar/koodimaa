@@ -1,59 +1,56 @@
-<main class="me-sivu">
-  <!-- Page Header -->
-  <section class="page-header animate-fade-in">
-    <h1 class="page-title">
-      <span class="title-icon"><i class="bi bi-person-circle"></i></span>
-      Informaatio
-    </h1>
-    <div class="title-underline"></div>
-  </section>
-
-  <section class="me-sivu-keskiosa">
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col" *ngFor="let item of content; let i = index">
-          <div class="card h-100 hover-card" [class.animate-slide-left]="i % 2 === 0" [class.animate-slide-right]="i % 2 !== 0">
-            <div class="card-image-wrapper">
-              <img *ngIf="item.image" [src]="item.image" class="card-img-top" alt="{{item.title}}">
-              <div class="image-overlay">
-                <i class="bi bi-zoom-in overlay-icon"></i>
-              </div>
-            </div>
-            <div class="card-body">
-              <h5 class="card-title">
-                <i class="bi bi-star-fill title-icon"></i>
-                {{ item.title }}
-              </h5>
-              <div class="card-divider"></div>
-              <p class="card-text" [innerHTML]="item.text"></p>
-            </div>
-            <div class="card-shine"></div>
-          </div>
-        </div>
+<main class="me-sivu-fullwidth">
+  <!-- Hero Header -->
+  <section class="hero-section animate-fade-in">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="hero-icon"><i class="bi bi-rocket-takeoff-fill"></i></span>
+        Tee yrityksestäsi digitaalinen menestys
+      </h1>
+      <p class="hero-subtitle">Ammattimaiset verkkosivut, jotka kasvattavat liiketoimintaasi</p>
+      <div class="hero-arrow">
+        <i class="bi bi-chevron-down"></i>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <div class="contact-form-container animate-fade-in-up">
-    <div class="container">
-      <div class="contact-box">
-        <div class="contact-header">
-          <h2 class="contact-title">
-            <i class="bi bi-envelope-heart-fill"></i>
-            Valmis aloittamaan?
-          </h2>
-          <p class="contact-subtitle">Ota yhteyttä ja keskustellaan projektistasi!</p>
+  <!-- Full-width Sections -->
+  <div class="fullwidth-sections">
+    <section class="info-section section-1" *ngFor="let item of content; let i = index" [attr.data-section]="i">
+      <div class="section-content" [class.content-left]="i % 2 === 0" [class.content-right]="i % 2 !== 0">
+        <div class="section-image" *ngIf="item.image">
+          <img [src]="item.image" [alt]="item.title">
+          <div class="image-glow"></div>
         </div>
-        <button class="send-button">
-          <a href="mailto:info@koodimaa.fi">
-            <span class="send-link">
-              <span class="button-text">Ota yhteyttä</span>
-              <i class="bi bi-send-fill button-icon"></i>
-            </span>
-          </a>
-        </button>
+        <div class="section-text">
+          <div class="section-number">0{{i + 1}}</div>
+          <h2 class="section-title">{{ item.title }}</h2>
+          <div class="section-divider"></div>
+          <div class="section-description" [innerHTML]="item.text"></div>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <div class="cta-icon">
+        <i class="bi bi-envelope-heart-fill"></i>
+      </div>
+      <h2 class="cta-title">Valmis aloittamaan?</h2>
+      <p class="cta-subtitle">Ota yhteyttä tänään ja muutetaan visiosi todellisuudeksi!</p>
+      <button class="cta-button">
+        <a href="mailto:info@koodimaa.fi">
+          <span class="button-content">
+            <span class="button-text">Ota yhteyttä nyt</span>
+            <i class="bi bi-arrow-right-circle-fill button-icon"></i>
+          </span>
+        </a>
+      </button>
+      <div class="cta-guarantee">
+        <i class="bi bi-check-circle-fill"></i>
+        <span>Ilmainen konsultaatio • Nopea vastaus • Räätälöity tarjous</span>
+      </div>
+    </div>
+  </section>
 </main>
