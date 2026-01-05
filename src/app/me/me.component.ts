@@ -17,21 +17,21 @@ export class MeComponent implements OnInit {
   pricingCards = [
     {
       name: 'Yksittäiset verkkosivut',
-      description: 'Kuukausimaksu sisältää sivuston rakentamisen',
+      description: 'Yhden sivun kotisivu (one-pager)',
       price: '€19',
       period: 'per kk + ALV 25,5%',
       icon: 'bi-file-earmark-text',
-      terms: 'Sivuston rakentaminen sisältyy hintaan, kun sopimus on vähintään 12 kk. Sen jälkeen 1 kk irtisanomisaika.',
+      terms: 'Sivuston rakentaminen sisältyy hintaan, kun sopimus on vähintään 12 kk. Hinnat ovat suuntaa-antavia.',
       featured: true,
       colorClass: 'cyan'
     },
     {
       name: 'Laajemmat sivustot',
-      description: 'Yli 10 sivun verkkosivustot',
+      description: '2-5 sivun verkkosivustot',
       price: '€49',
       period: 'per kk + ALV 25,5%',
       icon: 'bi-browser-chrome',
-      terms: 'Sivuston rakentaminen sisältyy hintaan, kun sopimus on vähintään 12 kk. Sen jälkeen 1 kk irtisanomisaika.',
+      terms: 'Sivuston rakentaminen sisältyy hintaan, kun sopimus on vähintään 12 kk. Hinnat ovat suuntaa-antavia.',
       featured: false,
       colorClass: 'purple'
     },
@@ -41,7 +41,7 @@ export class MeComponent implements OnInit {
       price: '€120',
       period: 'per tunti + ALV 25,5%',
       icon: 'bi-database',
-      terms: 'Tai sovitaan erikseen projektin laajuuden mukaan',
+      terms: 'Laajemmat projektit sovitaan erikseen. Pyydä tarkempi tarjous - hinnat ovat suuntaa-antavia.',
       featured: false,
       colorClass: 'pink'
     },
@@ -51,7 +51,7 @@ export class MeComponent implements OnInit {
       price: '€120',
       period: 'per tunti + ALV 25,5%',
       icon: 'bi-code-slash',
-      terms: 'Tai sovitaan erikseen projektin laajuuden mukaan',
+      terms: 'Laajemmat projektit sovitaan erikseen. Pyydä tarkempi tarjous - hinnat ovat suuntaa-antavia.',
       featured: false,
       colorClass: 'green'
     }

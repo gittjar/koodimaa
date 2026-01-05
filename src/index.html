@@ -140,33 +140,47 @@
     "offers": [
       {
         "@type": "Offer",
-        "name": "Yksittäiset verkkosivut",
+        "name": "Yksittäiset verkkosivut - One-pager",
+        "description": "Yhden sivun kotisivu kuukausimaksulla",
         "price": "19",
         "priceCurrency": "EUR",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
           "price": "19",
           "priceCurrency": "EUR",
-          "billingDuration": "P1M"
+          "billingDuration": "P1M",
+          "eligibleQuantity": {
+            "@type": "QuantitativeValue",
+            "value": "1",
+            "unitText": "sivu"
+          }
         },
         "availability": "https://schema.org/InStock"
       },
       {
         "@type": "Offer",
         "name": "Laajemmat verkkosivustot",
+        "description": "2-5 sivun verkkosivustot kuukausimaksulla",
         "price": "49",
         "priceCurrency": "EUR",
         "priceSpecification": {
           "@type": "UnitPriceSpecification",
           "price": "49",
           "priceCurrency": "EUR",
-          "billingDuration": "P1M"
+          "billingDuration": "P1M",
+          "eligibleQuantity": {
+            "@type": "QuantitativeValue",
+            "minValue": "2",
+            "maxValue": "5",
+            "unitText": "sivua"
+          }
         },
         "availability": "https://schema.org/InStock"
       },
       {
         "@type": "Offer",
-        "name": "Tuntityö ja erikoistyöt",
+        "name": "Tunti- ja erikoistyöt",
+        "description": "Laajemmat projektit ja räätälöidyt ratkaisut sovitaan erikseen. Hinnat suuntaa-antavia.",
         "price": "120",
         "priceCurrency": "EUR",
         "priceSpecification": {
