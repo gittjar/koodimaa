@@ -368,6 +368,7 @@
   background: rgba(10, 10, 20, 0.8);
   border-top: 1px solid rgba(118, 250, 246, 0.2);
   padding: 15px 20px;
+  font-size: 1.3rem;
 }
 
 .footer-content {
@@ -395,7 +396,7 @@
   border-radius: 8px;
   color: #76faf6;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
 }
 
@@ -426,7 +427,7 @@
 
 .text-muted {
   color: #999 !important;
-  font-size: 0.95rem;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -435,7 +436,7 @@
 .badge {
   padding: 8px 15px;
   border-radius: 20px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-weight: 700;
   display: flex;
   align-items: center;
