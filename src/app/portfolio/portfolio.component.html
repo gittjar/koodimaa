@@ -21,7 +21,7 @@
               </h2>
               <small class="m-2 date-badge">
                 <i class="bi bi-calendar-event"></i>
-                9.3.2025
+                {{latestUpdateDate}}
               </small>
             </div>
             <p class="m-1 description">Angularilla, Reactilla ja C# tekemiäni web-ohjelmia.</p>
@@ -84,6 +84,9 @@
                     <small class="text-muted">
                       <i class="bi bi-clock-fill"></i>
                       {{x.update}}
+                      <span *ngIf="isLoadingDates" class="loading-spinner" style="margin-left: 5px;">
+                        <i class="bi bi-arrow-clockwise"></i>
+                      </span>
                     </small>
                     <span class="badge badge-success" *ngIf="x.status === 'valmis'">
                       <i class="bi bi-check-circle-fill"></i>
@@ -93,6 +96,11 @@
                       <i class="bi bi-hourglass-split"></i>
                       {{x.status}}
                     </span>
+                  </div>
+                  <div class="footer-links" *ngIf="x.githubRepo">
+                    <a [href]="'https://github.com/gittjar/' + x.githubRepo" target="_blank" class="github-link" title="GitHub Repository">
+                      <i class="bi bi-github"></i> GitHub
+                    </a>
                   </div>
                 </div>
                 
