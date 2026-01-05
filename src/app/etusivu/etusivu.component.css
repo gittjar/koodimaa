@@ -430,11 +430,11 @@ h5 {
   }
 
   .hero-otsikko {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
 
   .hero-small-text {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 
   .hero-text {
@@ -447,24 +447,24 @@ h5 {
   }
 
   .button-projekteja {
-    font-size: 1.3rem;
-    padding: 12px 25px;
+    font-size: 1.6rem;
+    padding: 15px 30px;
   }
 
   h5 {
-    font-size: 1.3rem;
-  }
-
-  .section-title {
-    font-size: 2.5rem;
-  }
-
-  .gradient-text {
     font-size: 1.8rem;
   }
 
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .gradient-text {
+    font-size: 2.2rem;
+  }
+
   .lead {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
   .feature-card {
