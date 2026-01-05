@@ -25,107 +25,17 @@ export const content = [
       image: '../../assets/images/omakuva.jpg'
     },
     {
-      title: 'Hinnoittelu',
+      title: 'Hinnoittelu - Tilauspalvelu',
       text: `
-        <div class="pricing-list">
-          <div class="pricing-subcard">
-            <div class="pricing-row">
-              <div class="pricing-left">
-                <div class="pricing-icon-small"><i class="bi bi-file-earmark-text"></i></div>
-                <div class="pricing-info">
-                  <h5 class="pricing-name">Yksisivuinen verkkosivusto</h5>
-                  <p class="pricing-desc">Ammattimaisella ilmeellä</p>
-                </div>
-              </div>
-              <div class="pricing-right">
-                <div class="pricing-amount">€100-200</div>
-                <div class="pricing-tax">ALV 0%</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="pricing-subcard featured-subcard">
-            <div class="pricing-badge-small">⭐ Suosittu</div>
-            <div class="pricing-row">
-              <div class="pricing-left">
-                <div class="pricing-icon-small"><i class="bi bi-browser-chrome"></i></div>
-                <div class="pricing-info">
-                  <h5 class="pricing-name">Verkkosivusto max 5 sivua</h5>
-                  <p class="pricing-desc">Täydellinen paketti pienille yrityksille</p>
-                </div>
-              </div>
-              <div class="pricing-right">
-                <div class="pricing-amount">€500-700</div>
-                <div class="pricing-tax">ALV 0%</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="pricing-subcard">
-            <div class="pricing-row">
-              <div class="pricing-left">
-                <div class="pricing-icon-small"><i class="bi bi-building"></i></div>
-                <div class="pricing-info">
-                  <h5 class="pricing-name">Laaja verkkosivusto</h5>
-                  <p class="pricing-desc">Räätälöity ratkaisusi</p>
-                </div>
-              </div>
-              <div class="pricing-right">
-                <div class="pricing-amount">Tarjous</div>
-                <div class="pricing-tax">Ota yhteyttä</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="pricing-subcard">
-            <div class="pricing-row">
-              <div class="pricing-left">
-                <div class="pricing-icon-small"><i class="bi bi-database"></i></div>
-                <div class="pricing-info">
-                  <h5 class="pricing-name">Tietokantataulut</h5>
-                  <p class="pricing-desc">Mukautetut tietokantaratkaisut</p>
-                </div>
-              </div>
-              <div class="pricing-right">
-                <div class="pricing-amount">€50-100</div>
-                <div class="pricing-tax">per taulu • ALV 0%</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="pricing-subcard">
-            <div class="pricing-row">
-              <div class="pricing-left">
-                <div class="pricing-icon-small"><i class="bi bi-tools"></i></div>
-                <div class="pricing-info">
-                  <h5 class="pricing-name">Ylläpito</h5>
-                  <p class="pricing-desc">Kuukausittainen huolto ja päivitykset</p>
-                </div>
-              </div>
-              <div class="pricing-right">
-                <div class="pricing-amount">€30-70</div>
-                <div class="pricing-tax">per kk • ALV 0%</div>
-              </div>
-            </div>
-          </div>
-
-          <div class="pricing-subcard">
-            <div class="pricing-row">
-              <div class="pricing-left">
-                <div class="pricing-icon-small"><i class="bi bi-clock-history"></i></div>
-                <div class="pricing-info">
-                  <h5 class="pricing-name">Tuntityöt</h5>
-                  <p class="pricing-desc">Joustavaa kehitystyötä</p>
-                </div>
-              </div>
-              <div class="pricing-right">
-                <div class="pricing-amount">€75</div>
-                <div class="pricing-tax">per tunti • ALV 0%</div>
-              </div>
-            </div>
-          </div>
+        <div class="pricing-info-box">
+          <h6><i class="bi bi-star-fill"></i> Tilauspalvelun edut</h6>
+          <ul>
+            <li><i class="bi bi-check-circle-fill"></i> Ei suuria kertamaksuja - maksa kuukausittain</li>
+            <li><i class="bi bi-check-circle-fill"></i> Sivuston rakentaminen sisältyy hintaan (min. 12 kk sopimus)</li>
+            <li><i class="bi bi-check-circle-fill"></i> Joustavat sopimusehdot - 1 kk irtisanomisaika</li>
+            <li><i class="bi bi-check-circle-fill"></i> Ylläpito ja päivitykset sisältyvät palveluun</li>
+          </ul>
         </div>
-    
       `,
       image: '../../assets/images/IMG-001.WEBP'
     }

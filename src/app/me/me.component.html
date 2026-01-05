@@ -25,6 +25,33 @@
           <div class="section-number">0{{i + 1}}</div>
           <h2 class="section-title">{{ item.title }}</h2>
           <div class="section-divider"></div>
+          
+          <!-- Pricing Cards Section -->
+          <div *ngIf="item.title.includes('Hinnoittelu')" class="pricing-list">
+            <div *ngFor="let card of pricingCards" 
+                 class="pricing-subcard" 
+                 [class.featured-subcard]="card.featured"
+                 [ngClass]="'color-' + card.colorClass">
+              <div class="pricing-badge-small" *ngIf="card.featured">⭐ Suosittu</div>
+              <div class="pricing-row">
+                <div class="pricing-left">
+                  <div class="pricing-icon-small"><i [class]="card.icon"></i></div>
+                  <div class="pricing-info">
+                    <h1 class="pricing-name">{{ card.name }}</h1>
+                    <p class="pricing-desc">{{ card.description }}</p>
+                  </div>
+                </div>
+                <div class="pricing-right">
+                  <div class="pricing-amount">{{ card.price }}</div>
+                  <div class="pricing-tax">{{ card.period }}</div>
+                </div>
+              </div>
+              <div class="pricing-terms">
+                <small><i class="bi bi-info-circle"></i> {{ card.terms }}</small>
+              </div>
+            </div>
+          </div>
+          
           <div class="section-description" [innerHTML]="item.text"></div>
         </div>
       </div>
